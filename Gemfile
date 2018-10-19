@@ -8,8 +8,10 @@ gem 'pry-byebug', require: true
 
 # Assets
 gem 'font-awesome-sass'
+gem 'font-awesome-middleman'
 gem 'bootstrap-sass'
 gem 'jquery-middleman'
+
 
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary'

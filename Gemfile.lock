@@ -63,6 +63,8 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.4)
     ffi (1.9.25)
+    font-awesome-middleman (4.2.1)
+      middleman-core (>= 3.0.0)
     font-awesome-sass (5.4.1)
       sassc (>= 1.11)
     haml (5.0.4)
@@ -199,6 +201,7 @@ DEPENDENCIES
   bootstrap-sass
   cloudinary
   dotenv-rails
+  font-awesome-middleman
   font-awesome-sass
   jquery-middleman
   middleman (~> 4.2)
