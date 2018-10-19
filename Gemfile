@@ -12,3 +12,4 @@ gem 'bootstrap-sass'
 gem 'jquery-middleman'
 
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary'
