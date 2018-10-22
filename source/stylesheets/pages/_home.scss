@@ -106,7 +106,7 @@ input{
 .term {
   margin: 0 auto;
   margin-top: 25px;
-  width: 360px;
+  width: 380px;
   height: 250px;
   background-color: #141414;
   border-radius: 7.5px;
@@ -119,21 +119,12 @@ input{
     font-weight: 100;
     font-family: sans-serif;
   }
-  input {
-    width: 460px;
-    background-color: #141414;
-    border: none;
-    color: #ffffff;
-    font-size: 17px;
-    font-weight: 100;
-    margin-left: 15px;
-  }
 }
 
 .term-nav {
   position: absolute;
   height: 32.5px;
-  width: 360px;
+  width: 380px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   background-color: #cccccc;
@@ -143,7 +134,8 @@ input{
     color: #000000;
     display: inline-block;
     margin-left: -55px;
-    margin-top: 7.5px;
+    margin-top: 5.5px;
+    font-size: 14px;
   }
 }
 
@@ -168,16 +160,16 @@ input{
 }
 
 .first {
-  background-color: #cc3f3f;
+  background-color: #ff5f57;
 }
 
 .second {
-  background-color: #f2ad2e;
+  background-color: #ffbd2e;
   margin-left: 5px;
 }
 
 .third {
-  background-color: #42a826;
+  background-color: #28c940;
   margin-left: 5px;
 }
 
@@ -186,9 +178,9 @@ input{
   width: 380px;
   height: 25px;
   color: #ffffff;
-  font-family: sans-serif;
-  font-weight: 100;
-  margin-top: -55px;
-  margin-left: 175px;
+  margin-left: 24px;
+}
+.typed-cursor {
+  color:#fa0000;
 }
 /* END terminal div */
