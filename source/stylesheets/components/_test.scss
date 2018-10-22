@@ -72,6 +72,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color:white;
+  font-size: 16px;
+}
+
+.social {
+  font-size: 30px;
+  color:black;
+}
+
+.social:hover {
+  transform: scale(1.2) !important;
+  color:black;
+}
+
+.fa-linkedin {
+  padding-left: 3px;
 }
 
 .arrow-down,
