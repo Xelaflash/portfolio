@@ -1,6 +1,6 @@
 /* START scroll icon */
 .scroll-icon {
-  // animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
   position: fixed;
   bottom:0;
   left:0;
@@ -8,14 +8,14 @@
   margin:0 auto;
   color:white;
   width:100%;
-  button {
-    background: transparent;
-    border:none;
+  a {
+    text-decoration: none;
   }
-  .arrow {
+  .arrow, .fa-chevron-down {
     text-align: center;
     margin: 0 auto;
     color:white;
+    animation: pulse 8s infinite;
     // padding-bottom: 0.5rem;
 
     .scroll-text {
@@ -35,9 +35,6 @@
   //   100% { transform: scale(1,1)      translateY(0); }
   // }
   //
-  // .arrow {
-  //   animation: pulse 8s infinite;
-  // }
   // @keyframes pulse {
   //   0% {
   //     color: #00F3FF;

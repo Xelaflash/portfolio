@@ -2,110 +2,17 @@
 title: Alex G -  Fullstack WebDev
 ---
 
-<div class="container" id="home">
-
-  <div class="title">
-    <section class="cd-intro">
-      <div class="cd-intro-content bouncy">
-        <h1 class="text-center">Alexandre Gros</h1>
-        <hr id="title-sep">
-        <h2 class="text-center">Fullstack Web Developer</h2>
-      </div>
-    </section>
-  </div>
-  <div class="flex-section">
-      <div class="term">
-        <div class="term-nav">
-          <div class="circle first"><b>x</b></div>
-          <div class="circle second"><b>-</b></div>
-          <div class="circle third"><b><</b></div>
-          <p>alex-laptop -- -zsh -- 80x24</p>
-        </div>
-        <form>
-          <p> ~ user$
-
-        </form>
-        <div class="output">
-          <div id="typed-strings">
-            <p>Hi, i'm Alex</p>
-            <p>Interested in a website?</p>
-            <p>Great, i'm available. 👍</p>
-            <p>Don't hesitate to contact me! 🤓 </p>
-          </div>
-          <span id="typed"></span>
-        </div>
-      </div>
-    <div class="stack">
-      <div class="stack-list" id="list-one">
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966066/ruby.png", width: 40, height: 40, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966489/html5-with-wordmark-color.svg", width: 50, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966489/css3-seeklogo.com.svg", width: 50, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966152/javascript-js-seeklogo.com.svg", width: 40, height: 40, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
-      </div>
-      <div class="stack-list" id="list-two">
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966489/rails-seeklogo.com.svg", width: 110, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo", id:"rails"%>
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966490/postgresql-seeklogo.com.svg", width: 50, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
-      </div>
-      <div class="stack-list" id="list-three">
-        <p><small>Learning on going : </small></p>
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539968975/react.png", width: 65, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539968980/swift.png", width: 45, height: 45, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
-
-
-      </div>
-    </div>
-  </div>
-
-  <div class="bottom-left">
-    <p class="text-center">
-      Not in the mood to browse this website ? 😥 <br>
-      Go to the playground directly! 😉
-    </p>
-
-  </div>
-
-  <div class="scroll-icon">
-    <div class="arrow bounce">
-      <div class="scroll-text">Next</div>
-      <button class="fa fa-chevron-down fa-2x" href="#" />
-    </div>
-  </div>
-
-  <div class="bottom-right">
-    <div id="social-anim">
-      <div class="cube">
-        <div class="plus">
-          <div class="plus-horizontal"></div>
-          <div class="plus-vertical"></div>
-        </div>
-        <div class="quadrant">
-          <div class="quadrant__item">
-            <div class="quadrant__item__content">
-              <a href="https://github.com/Xelaflash" class="arrow-up social"  target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div class="quadrant__item">
-            <div class="quadrant__item__content">
-              <a href="https://www.linkedin.com/in/alexandre-gros-46406b27" class="arrow-right social"  target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div class="quadrant__item">
-            <div class="quadrant__item__content">
-              <a href="https://twitter.com/GhostXela" class="arrow-left social"  target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            </div>
-          </div>
-          <div class="quadrant__item">
-            <div class="quadrant__item__content">
-              <a href="https://stackexchange.com/users/13739225/xflash?tab=activity" class="arrow-down social" target="_blank" rel="noopener noreferrer">
-                <i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<div class="container">
+   <section class="scrollable-section" id="home">
+     <%= partial "layouts/home" %>
+   </section>
+   <section class="scrollable-section" id="about">
+     <%= partial "layouts/about" %>
+   </section>
 </div>
+
+
+
 
 
 <script>
@@ -151,4 +58,53 @@ title: Alex G -  Fullstack WebDev
     tl.timeScale(1.8);
     tl.reverse();
   }
+</script>
+
+
+<script>
+//initialize
+var winHeight = $(window).height(),
+    pages = $('.scrollable-section'),
+    navLinks = $('.navbar-link'),
+    currentPage = 0;
+
+$('html, body').animate({ scrollTop: 0}, 0);
+
+// listen to the mousewheel scroll
+$(window).on('mousewheel DOMMouseScroll', function(e){
+
+    //by default set the direction to DOWN
+    var direction = 'down',
+    $th = $(this),
+    // depending on the currentPage value we determine the page offset
+    currentPageOffset = currentPage * winHeight;
+
+    // if the value of these properties of the even is positive then the direction is UP
+    if (e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0) {
+        direction = 'up';
+    }
+
+   // if the direction is DOWN and the currentPage increasing won't exceed
+   // the number of PAGES divs, then we scroll downward and increase the value
+   // of currentPage for further calculations.
+   if(direction == 'down' && currentPage <= pages.length - 2){
+       $th.scrollTop(currentPageOffset + winHeight);
+       currentPage++;
+   } else if(direction == 'up' && currentPage >= 0) {
+       // else scroll up and decrease the value of currentPage IF the direction
+       //  is UP and we're not on the very first slide
+       $th.scrollTop(currentPageOffset - winHeight);
+       currentPage--;
+   }
+});
+
+// as final step we need to update the value of currenPage upon the clicking of the
+// navbar links to insure having correct value of currentPage
+navLinks.each(function(index){
+    $(this).on('click', function(){
+    navLinks.parent().removeClass('current');
+    $(this).parent().addClass('current');
+    currentPage = index;
+  });
+});
 </script>
