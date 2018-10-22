@@ -12,7 +12,6 @@ title: Alex G -  Fullstack WebDev
   </div>
 
   <div class="flex-section">
-    <div class="terminal-typed-js">
       <div class="term">
         <div class="term-nav">
           <div class="circle first"><b>x</b></div>
@@ -27,24 +26,22 @@ title: Alex G -  Fullstack WebDev
         <div class="output">
           <div id="typed-strings">
             <p>Hi, i'm Alex</p>
-            <p>You need a website?</p>
+            <p>Interested in a website?</p>
             <p>Great, i'm available. 👍</p>
             <p>Don't hesitate to contact me! 🤓 </p>
           </div>
           <span id="typed"></span>
         </div>
       </div>
-    </div>
-
     <div class="stack">
       <div class="stack-list" id="list-one">
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966066/ruby.png", width: 50, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966152/javascript-js-seeklogo.com.svg", width: 50, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
-        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966489/rails-seeklogo.com.svg", width: 100, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo"%>
-      </div>
-      <div class="stack-list" id="list-two">
+        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966066/ruby.png", width: 40, height: 40, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
         <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966489/html5-with-wordmark-color.svg", width: 50, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
         <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966489/css3-seeklogo.com.svg", width: 50, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
+        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966152/javascript-js-seeklogo.com.svg", width: 40, height: 40, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
+      </div>
+      <div class="stack-list" id="list-two">
+        <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966489/rails-seeklogo.com.svg", width: 110, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo", id:"rails"%>
         <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966490/postgresql-seeklogo.com.svg", width: 50, height: 50, alt: "Fullstack WebDev - Stack logos", class:"stack-logo" %>
       </div>
       <div class="stack-list" id="list-three">
@@ -56,9 +53,6 @@ title: Alex G -  Fullstack WebDev
       </div>
     </div>
   </div>
-  
-
-
 
 
   <div class="bottom-left">
@@ -86,10 +80,10 @@ title: Alex G -  Fullstack WebDev
 </div>
 
 
-<!-- <script>
-var typed = new Typed('#typed', {
+<script>
+const typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
   typeSpeed: 120,
   loop: true
 });
-</script> -->
+</script>

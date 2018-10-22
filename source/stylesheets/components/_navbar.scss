@@ -24,6 +24,12 @@
   width: 60px;
   height:60px;
   border-radius: 2px;
+  transition: 0.7s;
+}
+
+#logo-pic:hover {
+  box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6), 0px 9px 13px rgba(255, 255, 255, 0.6);
+  transform: scale(1.1);
 }
 
 /* Basic navbar item */
@@ -61,7 +67,6 @@
 
 .navbar-link:hover::after {
     width: 100%;
-    //transition: width .3s;
 }
 
 /* Dropdown menu */

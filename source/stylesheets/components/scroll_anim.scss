@@ -1,9 +1,13 @@
 /* START scroll icon */
 .scroll-icon {
   // animation: bounce 2s infinite;
+  position: fixed;
+  bottom:0;
+  left:0;
   cursor: pointer;
+  margin:0 auto;
   color:white;
-  width: 80px;
+  width:100%;
   button {
     background: transparent;
     border:none;
@@ -12,7 +16,7 @@
     text-align: center;
     margin: 0 auto;
     color:white;
-    padding-bottom: 0.5rem;
+    // padding-bottom: 0.5rem;
 
     .scroll-text {
       text-align: center;
@@ -20,7 +24,7 @@
       margin-bottom: -0.125rem;
     }
   }
-
+  //
   // @keyframes bounce {
   //   0%   { transform: scale(1,1)      translateY(0); }
   //   10%  { transform: scale(1.1,.9)   translateY(0); }

@@ -1,9 +1,8 @@
 /* START terminal div */
 .term {
-  margin: 0 auto;
-  margin-top: 25px;
-  width: 380px;
-  height: 250px;
+  margin: 40px 0 0 40px;
+  width: 430px;
+  height: 200px;
   background-color: #141414;
   border-radius: 7.5px;
   overflow: hidden;
@@ -20,7 +19,7 @@
 .term-nav {
   position: absolute;
   height: 32.5px;
-  width: 380px;
+  width: 430px;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   background-color: #cccccc;
