@@ -112,7 +112,9 @@
 /* go to playground text */
 .bottom-left {
   width:40%;
-  margin: 220px 0 0 -110px;
+  position: fixed;
+  bottom: 30px;
+  left:-50px;
   letter-spacing: 2px;
   p {
     margin:0;

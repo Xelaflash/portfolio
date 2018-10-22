@@ -1,3 +1,9 @@
+.bottom-right {
+  position: fixed;
+  bottom: 32px;
+  right:80px;
+}
+
 #social-anim {
   display: flex;
   align-items: center;
@@ -71,18 +77,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color:white;
   font-size: 16px;
 }
 
 .social {
   font-size: 30px;
-  color:black;
+  color:white;
+  transition: 0.6s;
 }
 
 .social:hover {
   transform: scale(1.2) !important;
-  color:black;
+  color:#2f416a;
 }
 
 .fa-linkedin {
