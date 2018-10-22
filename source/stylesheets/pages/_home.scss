@@ -1,9 +1,12 @@
 #home {
-  max-height: 100vh;
+  height: 100vh;
 }
 
 /* start title */
 .title {
+  margin: 80px 0 20px 0;
+  width:40%;
+  border: 1px solid green;
   h1{
     color:white;
   }
@@ -99,9 +102,6 @@
 
 
 /* START terminal div */
-input{
-  outline: none;
-}
 
 .term {
   margin: 0 auto;
