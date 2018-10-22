@@ -1,5 +1,5 @@
 #home {
-  height: 100vh;
+  max-height: 100vh;
 }
 
 /* start title */
@@ -96,3 +96,99 @@
   // }
 }
 /* END scroll icon */
+
+
+/* START terminal div */
+input{
+  outline: none;
+}
+
+.term {
+  margin: 0 auto;
+  margin-top: 25px;
+  width: 360px;
+  height: 250px;
+  background-color: #141414;
+  border-radius: 7.5px;
+  overflow: hidden;
+
+  p {
+    color: #ffffff;
+    margin-top: 40px;
+    margin-left: 5px;
+    font-weight: 100;
+    font-family: sans-serif;
+  }
+  input {
+    width: 460px;
+    background-color: #141414;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 100;
+    margin-left: 15px;
+  }
+}
+
+.term-nav {
+  position: absolute;
+  height: 32.5px;
+  width: 360px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #cccccc;
+  text-align: center;
+
+  p {
+    color: #000000;
+    display: inline-block;
+    margin-left: -55px;
+    margin-top: 7.5px;
+  }
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-left: 7.5px;
+  margin-top: 7.5px;
+  border-radius: 50%;
+}
+
+.first,
+.second,
+.third {
+  float: left;
+  b {
+    font-size: 12.5px;
+    font-family: sans-serif;
+    display: none;
+  }
+}
+
+.first {
+  background-color: #cc3f3f;
+}
+
+.second {
+  background-color: #f2ad2e;
+  margin-left: 5px;
+}
+
+.third {
+  background-color: #42a826;
+  margin-left: 5px;
+}
+
+.output {
+  position: absolute;
+  width: 380px;
+  height: 25px;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-top: -55px;
+  margin-left: 175px;
+}
+/* END terminal div */

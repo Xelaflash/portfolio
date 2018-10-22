@@ -1,5 +1,5 @@
 ---
-title: Alex G - WebDev Portofolio
+title: Alex G -  Fullstack WebDev
 ---
 
 <div class="container" id="home">
@@ -32,8 +32,29 @@ title: Alex G - WebDev Portofolio
   </div>
 
   <div class="typed-js">
-
+    <div class="term">
+      <div class="term-nav">
+        <div class="circle first"><b>x</b></div>
+        <div class="circle second"><b>-</b></div>
+        <div class="circle third"><b><</b></div>
+        <p>user --- -bash --- 80x24</p>
+      </div>
+      <form>
+        <p> ~ user$
+        <input id="command" type="text" autofocus></p>
+        <button style="visibility: hidden;" id="submit"></button>
+      </form>
+      <div class="output">
+        <div id="typed-strings">
+          <p><strong> Need a website?</strong>.</p>
+          <p>check my work and contact me.</p>
+        </div>
+        <span id="typed"></span>
+      </div>
+    </div>
   </div>
+
+
 
   <div class="bottom-left">
     <p class="text-center">
@@ -51,7 +72,7 @@ title: Alex G - WebDev Portofolio
     </div>
   </div>
 
-  <br><br><br><br><br>
+
 
   <div class="bottom-right">
   </div>
@@ -60,4 +81,16 @@ title: Alex G - WebDev Portofolio
 </div>
 
 
-<%= link_to "test", "test.html" %>
+<%#= link_to "test", "test.html" %>
+
+<div id="typed-strings">
+  <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+  <p>It <em>types</em> out sentences.</p>
+</div>
+<span id="typed"></span>
+
+<script>
+var typed = new Typed('#typed', {
+  stringsElement: '#typed-strings'
+});
+</script>
