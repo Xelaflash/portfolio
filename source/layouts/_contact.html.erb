@@ -1,66 +1,105 @@
 <div class="container" id="contact-page">
-    <h1 class="main-title text-center">03</h1>
-    <h2 class="sub-title text-center">Let's Work Together</h2>
-
-    <div class="contact-details">
-
-      <div class="contact-address">
-        <div class="flex-section">
-          <div class="contact-med-1">
-            <div class="flex-sub-section">
-              <div class="phone-left">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-              </div>
-              <div class="phone-right">
-                <h6>SKYPE</h6>
-                <p>alex.gros.pro</p>
-              </div>
+  <h1 class="main-title text-center">03</h1>
+  <h2 class="sub-title text-center">Let's Work Together</h2>
+  <div class="contact-details">
+    <div class="contact-address">
+      <div class="flex-section">
+        <div class="contact-med-1">
+          <div class="flex-sub-section">
+            <div class="phone-left">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="phone-right">
+              <h6>SKYPE</h6>
+              <p>alex.gros.pro</p>
             </div>
           </div>
-          <div class="contact-med-2">
-            <div class="flex-sub-section">
-              <div class="globe-left">
-                <i class="fa fa-globe" aria-hidden="true"></i>
-              </div>
-              <div class="globe-right">
-                <h6>WHERE AM I?</h6>
-                <p>Currently living in the beatiful island of Barbados 🇧🇧</p>
-              </div>
+        </div>
+        <div class="contact-med-2">
+          <div class="flex-sub-section">
+            <div class="globe-left">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+            <div class="globe-right">
+              <h6>WHERE AM I?</h6>
+              <p>Currently living in the beatiful island of Barbados 🇧🇧</p>
             </div>
           </div>
-          <div class="contact-med-3">
-            <div class="flex-sub-section">
-              <div class="mail-left">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-              </div>
-              <div class="mail-right">
-                <h6>EMAIL</h6>
-                <p><a class="main-text-contact" href="mailto:alex.gros.pro@gmail.com">alex.gros.pro@gmail.com</a></p>
-              </div>
+        </div>
+        <div class="contact-med-3">
+          <div class="flex-sub-section">
+            <div class="mail-left">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="mail-right">
+              <h6>EMAIL</h6>
+              <p><a class="main-text-contact" href="mailto:alex.gros.pro@gmail.com">alex.gros.pro@gmail.com</a></p>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="inner-contact">
-        <div class="contact-form">
-          <form id="contact-us" method="post" action="http://formspree.io/alex.gros.pro@gmail.com">
-            <div class="col-xs-6">
-              <input type="text" name="name" id="name" required="required" class="form" placeholder="NAME" />
-              <input type="email" name="mail" id="mail" required="required" class="form" placeholder="EMAIL" />
-              <input type="text" name="subject" id="subject" required="required" class="form" placeholder="SUBJECT" />
-            </div>
-            <div class="col-xs-6">
-              <textarea name="message" id="message" class="form textarea"  placeholder="YOUR MESSAGE"></textarea>
-            </div>
-            <div class="send-btn">
-              <button type="submit" id="submit" name="submit" class="form-btn">SEND MESSAGE</i></button>
-            </div>
-          </form>
-        </div>
-      </div>
-
-
     </div>
-
+    <div class="inner-contact">
+      <div class="contact-form">
+        <form id="contact-us" method="post" action="http://formspree.io/alex.gros.pro@gmail.com">
+          <div class="col-xs-6">
+            <input type="text" name="name" id="name" required="required" class="form" placeholder="NAME" />
+            <input type="email" name="mail" id="mail" required="required" class="form" placeholder="EMAIL" />
+            <input type="text" name="subject" id="subject" required="required" class="form" placeholder="SUBJECT" />
+          </div>
+          <div class="col-xs-6">
+            <textarea name="message" id="message" class="form textarea"  placeholder="YOUR MESSAGE"></textarea>
+          </div>
+          <div class="send-btn">
+            <button type="submit" id="submit" name="submit" class="form-btn"><span>SEND MESSAGE</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+  document.querySelector('.form-btn').onmousemove = (e) => {
+    const x = e.pageX - e.target.offsetLeft
+    const y = e.pageY - e.target.offsetTop
+    e.target.style.setProperty('--x', `${ x }px`)
+    e.target.style.setProperty('--y', `${ y }px`)
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  const docStyle = document.documentElement.style
+  const aElem = document.querySelector('a')
+  const boundingClientRect = aElem.getBoundingClientRect()
+
+  aElem.onmousemove = function(e) {
+    const x = e.clientX - boundingClientRect.left
+    const y = e.clientY - boundingClientRect.top
+    const xc = boundingClientRect.width/2
+    const yc = boundingClientRect.height/2
+    const dx = x - xc
+    const dy = y - yc
+
+    docStyle.setProperty('--rx', `${ dy/-1 }deg`)
+    docStyle.setProperty('--ry', `${ dx/10 }deg`)
+  }
+
+  aElem.onmouseleave = function(e) {
+    docStyle.setProperty('--ty', '0')
+    docStyle.setProperty('--rx', '0')
+    docStyle.setProperty('--ry', '0')
+  }
+
+  aElem.onmousedown = function(e) {
+    docStyle.setProperty('--tz', '-25px')
+  }
+
+  document.body.onmouseup = function(e) {
+    docStyle.setProperty('--tz', '-12px')
+  }
+});
+
+</script>
