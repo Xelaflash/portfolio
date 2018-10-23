@@ -1,4 +1,22 @@
 #about{
-  height: 100vh;
-  background:red;
+  height: calc(100vh - 70px);
+}
+
+.about-content {
+  border:1px solid green;
+  max-width: 800px;
+  margin:0 auto;
+  text-align: justify;
+  padding:40px;
+
+  h1 {
+    color:#E70E0E;
+    font-size: 38px;
+    margin-top:0;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
 }

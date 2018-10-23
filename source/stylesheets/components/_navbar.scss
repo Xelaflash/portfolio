@@ -1,4 +1,20 @@
 /* Main navbar */
+
+.fixed-nav nav {
+  position: fixed;
+  box-shadow:0 1px 1px rgba(255,255,255,0.9);
+}
+
+nav {
+  top:0;
+  width: 100%;
+  transition:all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+
+
+
 .navbar-top {
   background: #2E416A;
   height: 70px;
@@ -28,7 +44,7 @@
 }
 
 #logo-pic:hover {
-  box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6), 0px 9px 13px rgba(255, 255, 255, 0.6);
+  // box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6), 0px 9px 13px rgba(255, 255, 255, 0.6);
   transform: scale(1.1);
 }
 
