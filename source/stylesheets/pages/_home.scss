@@ -1,9 +1,9 @@
-#home {
-  height: 100vh;
+#home-page {
+  // height: 100vh;
 }
 
 /* start title */
-.title {
+.name-title {
   letter-spacing: 3px;
   margin: 100px 0 40px 30px;
   width:40%;
@@ -11,12 +11,12 @@
     color:white;
   }
   h2{
-    color: #fa0000;
+    color: $red;
   }
 }
 #title-sep {
   width: 200px;
-  border-top: 1px solid #fa0000;
+  border-top: 1px solid $red;
 }
 /* end title */
 

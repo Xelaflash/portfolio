@@ -1,0 +1,87 @@
+#contact-page {
+  // height: calc(100vh - 70px);
+
+}
+
+.contact-content {
+  border: 1px solid red;
+}
+
+.contact-details {
+  // h3 {
+  //   font-size: 26px;
+  //   margin-bottom:20px;
+  // }
+
+  h6 {
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: lighter;
+  }
+}
+
+.flex-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-sub-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-med-1 {
+  width: 300px;
+}
+
+.contact-med-2 {
+  width: 300px;
+}
+.contact-med-3  {
+  width: 300px;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.phone-left, .globe-left, .mail-left {
+  background:white;
+  transform: rotate(45deg);
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+
+.fa-phone, .fa-globe, .fa-envelope,  {
+  color: $blue;
+  transform: rotate(-45deg);
+}
+
+.fa-phone {
+  font-size:24px;
+  padding: 8px;
+  margin-left: 3px;
+}
+
+.fa-globe {
+  font-size:24px;
+  padding: 8px;
+  margin-left: 3px;
+}
+
+.fa-envelope {
+  font-size:18px;
+  padding: 11px;
+}
+
+.globe-right {
+  padding-top: 20px;
+}
+

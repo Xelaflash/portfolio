@@ -14,7 +14,7 @@
 .cube {
   width: 60px;
   height: 60px;
-  background: #fa0000;
+  background: $red;
   border-radius: 6px;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fa0000;
+  background: $red;
   border-radius: 6px;
   position: relative;
 }
@@ -88,7 +88,7 @@
 
 .social:hover {
   transform: scale(1.2) !important;
-  color:#2f416a;
+  color:$blue;
 }
 
 .fa-linkedin {
