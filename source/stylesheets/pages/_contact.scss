@@ -1,18 +1,10 @@
 #contact-page {
   // height: calc(100vh - 70px);
+    border: 1px solid red;
 
-}
-
-.contact-content {
-  border: 1px solid red;
 }
 
 .contact-details {
-  // h3 {
-  //   font-size: 26px;
-  //   margin-bottom:20px;
-  // }
-
   h6 {
     font-size: 18px;
     letter-spacing: 4px;
@@ -49,6 +41,9 @@
     color: white;
     text-decoration: none;
   }
+  a:hover {
+    text-decoration: underline;
+  }
 }
 
 .phone-left, .globe-left, .mail-left {
@@ -84,4 +79,58 @@
 .globe-right {
   padding-top: 20px;
 }
+
+/* START FORM */
+
+.inner-contact {
+  margin-bottom:40px;
+}
+
+.form{
+  width: 100%;
+  padding: 15px;
+  background:#f8f8f8;
+  border:1px solid rgba(0, 0, 0, 0.075);
+  margin-bottom:25px;
+  color:#727272 !important;
+  letter-spacing:2px;
+  font-size:13px;
+  border-radius:2px;
+}
+
+.form:hover{
+  border:1px solid #32CD32;
+}
+
+.form:focus{
+  color: white;
+  outline: none;
+  border:1px solid #32CD32;
+}
+
+.textarea{
+  height: 200px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.form-btn{
+  width:250px;
+  display: block;
+  height: auto;
+  padding:15px;
+  color:white;
+  background:#8BC3A3;
+  border:none;
+  border-radius:2px;
+  outline: none;
+  float:right;
+  margin: -15px 15px 10px 0;
+}
+
+.form-btn:hover{
+  background:$red;
+}
+
+/* END FORM */
 

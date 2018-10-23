@@ -1,14 +1,11 @@
 <div class="container" id="contact-page">
-  <div class="contact-content">
     <h1 class="main-title text-center">03</h1>
     <h2 class="sub-title text-center">Let's Work Together</h2>
+
     <div class="contact-details">
- <!--      <h3 class="text-center">CONTACT</h3> -->
 
       <div class="contact-address">
-
         <div class="flex-section">
-
           <div class="contact-med-1">
             <div class="flex-sub-section">
               <div class="phone-left">
@@ -20,7 +17,6 @@
               </div>
             </div>
           </div>
-
           <div class="contact-med-2">
             <div class="flex-sub-section">
               <div class="globe-left">
@@ -32,7 +28,6 @@
               </div>
             </div>
           </div>
-
           <div class="contact-med-3">
             <div class="flex-sub-section">
               <div class="mail-left">
@@ -44,17 +39,28 @@
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
 
-
-
-      <div class="contact-form">
-
+      <div class="inner-contact">
+        <div class="contact-form">
+          <form id="contact-us" method="post" action="http://formspree.io/alex.gros.pro@gmail.com">
+            <div class="col-xs-6">
+              <input type="text" name="name" id="name" required="required" class="form" placeholder="NAME" />
+              <input type="email" name="mail" id="mail" required="required" class="form" placeholder="EMAIL" />
+              <input type="text" name="subject" id="subject" required="required" class="form" placeholder="SUBJECT" />
+            </div>
+            <div class="col-xs-6">
+              <textarea name="message" id="message" class="form textarea"  placeholder="YOUR MESSAGE"></textarea>
+            </div>
+            <div class="send-btn">
+              <button type="submit" id="submit" name="submit" class="form-btn">SEND MESSAGE</i></button>
+            </div>
+          </form>
+        </div>
       </div>
+
 
     </div>
-  </div>
+
 </div>
