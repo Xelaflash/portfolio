@@ -3,11 +3,66 @@
   border: 1px solid black;
 }
 
-.card-pic {
-width:900px;
-height: 600px;
-margin: 0 auto;
-background-size: cover;
-background-position: center;
-position: relative;
+.projects {
+  // display: flex;
+  // justify-content: space-between;
+  // align-items:center;
+  margin: 10px;
 }
+
+.project-pic {
+
+}
+
+.card {
+  width: 80%;
+  position: relative;
+  height:auto;
+  margin:20px auto;
+  border: 1px solid white;
+}
+
+
+.card-pic {
+  margin: 0 auto;
+  position: relative;
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.card-pic:hover img {
+  opacity: 0;
+}
+
+.card-pic:hover .card-hover {
+  opacity: 1;
+}
+
+.card-hover {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+// .card-text {
+//   color: white;
+//   font-size: 20px;
+//   position: absolute;
+
+//   // text-align: center;
+// }
+
+.tools {
+  color:$red;
+}
+
+
