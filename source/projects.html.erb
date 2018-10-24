@@ -4,28 +4,18 @@
 
   <div class="projects">
     <% data.projects.each do |owner, project| %>
-      <div class="card">
-        <div class="card-pic">
-          <%= image_tag project.picture, class: "project-pic img-responsive", alt: "Fullstack Webdev - projects - #{project.name}" %>
-          <div class="card-hover">
+      <div class="content">
+        <%= image_tag project.picture, class: "project-pic img-responsive", alt: "Fullstack Webdev - projects - #{project.name}" %>
+        <div class="content-overlay"></div>
+        <div class="content-details fadeIn-top fadeIn-left">
             <h3 class=""><%= project.name %></h3>
             <hr class="title-sep">
             <p class="description"><%= project.description %></p>
             <br>
             <p class="tools"><%= project.stack %></p>
-          </div>
         </div>
       </div>
     <% end %>
   </div>
 
-
-
-
 </div>
-
-
-
-
-
-
