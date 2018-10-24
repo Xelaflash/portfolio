@@ -3,6 +3,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :sprockets
+activate :livereload
 
 page '/*.xml', layout: false
 page '/*.json', layout: false

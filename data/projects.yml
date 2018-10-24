@@ -1,0 +1,18 @@
+Cabane:
+  name: "La cabane de Maï"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540396225/cabanemaii.png"
+  description: "E-commerce website for a Franch organic beauty shop. Developped in Rails with Devise and Stripe."
+  stack: "Rails | Javascript | Heroku | Stripe"
+Goosebumps:
+  name: "Goosebumps"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540396232/goosebumps.png"
+  description: "Middleman static website for an electronic djs crew"
+  stack: "Middleman | GitHub pages"
+PYM:
+  name: "Pierre-Yves Mori - TCC"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540396240/pymtcc.png"
+  description: "Website for a French therapist"
+  date: 2018
+  stack: "Rails | Heroku"
+
+

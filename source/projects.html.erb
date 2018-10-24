@@ -1,0 +1,31 @@
+<div class="container" id="projects-page">
+  <h1 class="main-title text-center">02</h1>
+  <h2 class="sub-title text-center">My Work</h2>
+
+  <div class="projects-cards">
+      <div class="card">
+        <% data.projects.each do |owner, project| %>
+          <div class="card-body">
+            <div class="card-pic">
+              <%= image_tag project.picture, class: "project-pic img-responsive", alt: "Fullstack Webdev - projects - #{project.name}" %>
+            </div>
+              <div class="card-hover">
+                <h3><%= project.name %></h3>
+                <p><%= project.description %></p>
+                <br>
+                <p><%= project.stack %></p>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
