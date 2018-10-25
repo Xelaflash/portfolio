@@ -18,40 +18,47 @@
   box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6), 3px 9px 13px rgba(255, 255, 255, 0.6);
 }
 
-.disclaimer {
+.drag-text {
   font-style: italic;
-  font-size: 13px;
+  font-size: 15px;
+  margin:0;
+  color:$red;
 }
 
 .tools {
   color:$red;
 }
 
+.content {
+  position: relative;
+}
+
+.disclaimer {
+  font-style: italic;
+  font-size: 13px;
+  margin:10px 0 -15px 0;
+}
+
 /* START OVERLAY + DRAG ANIM */
 .projects.active {
+  background: rgba(255,255,255,0.3);;
   cursor: grabbing;
   cursor: -webkit-grabbing;
   transform: scale(1);
 }
 
 .item {
-  position: relative;
-  margin: 10px auto;
-  overflow: hidden;
   width:80%;
   height: 80%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 0 100px;
-  padding: 20px;
+  margin: 30px 100px;
 }
 
-.item .content-overlay {
+.content-overlay {
   background: rgba(47, 65, 106, 0.9);
   position: absolute;
-  height: 100%;
-  width: 100%;
   left: 0;
   top: 0;
   bottom: 0;
@@ -62,7 +69,7 @@
   transition: all 0.4s ease-in-out 0s;
 }
 
-.item:hover .content-overlay{
+.content:hover .content-overlay{
   opacity: 1;
 }
 
@@ -72,12 +79,12 @@
   padding-left: 1em;
   padding-right: 1em;
   width: 70%;
-  top: 50%;
-  left: 50%;
+  top: 0;
+  left: 0;
   opacity: 0;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-150%, -150%);
+  -moz-transform: translate(-150%, -150%);
+  transform: translate(-150%, -150%);
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
@@ -85,10 +92,9 @@
   padding:20px;
 }
 
-
-.item:hover .content-details{
-  top: 50%;
-  left: 50%;
+.content:hover .content-details{
+  top: 105%;
+  left: 120%;
   opacity: 1;
 }
 
@@ -108,7 +114,3 @@
   text-shadow: 2px 2px $red;
 }
 /* END OVERLAY + DRAG ANIM */
-
-
-
-

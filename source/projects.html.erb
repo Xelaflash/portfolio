@@ -1,14 +1,14 @@
 <div class="container" id="projects-page">
   <h1 class="main-title text-center">02</h1>
   <h2 class="sub-title text-center">My Work</h2>
-  <p class="text-center disclaimer"><small>Disclaimer : apps hosted on heroku's free plan will take few times to load (server needs to wake up)</small></p>
-
+  <p class="text-center drag-text"><small>Click and Drag to browse projects</small></p>
   <div class="projects">
     <% data.projects.each do |owner, project| %>
       <div class="item">
-        <%= image_tag project.picture, class: "content-image img-responsive", alt: "Fullstack Webdev - projects - #{project.name}" %>
-        <div class="content-overlay"></div>
-        <div class="content-details fadeIn-top-left">
+        <div class="content">
+          <%= image_tag project.picture, class: "img-responsive", alt: "Fullstack Webdev - projects - #{project.name}" %>
+          <div class="content-overlay"></div>
+          <div class="content-details fadeIn-top-left">
             <h3 class=""><%= project.name %></h3>
             <hr class="title-sep">
             <p class="description"><%= project.description %></p>
@@ -16,9 +16,44 @@
             <p class="tools"><%= project.stack %></p>
             <br>
             <a class="url" href="<%= project.url %>" target="_blank" rel="noopener noreferrer"><small>Visit Website</small></a>
+            <br>
+             <p class="text-center disclaimer"><small>Disclaimer : apps hosted on heroku's free plan will take few times to load (server needs to wake up)</small></p>
+          </div>
         </div>
       </div>
     <% end %>
   </div>
-
 </div>
+
+
+<script>
+  const slider = document.querySelector('.projects');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+  });
+
+  slider.addEventListener('mousemove', (e) => {
+    if (!isDown) return;  // stop the fn from running
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3;
+    slider.scrollLeft = scrollLeft - walk;
+  });
+</script>
