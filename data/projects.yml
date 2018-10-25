@@ -1,54 +1,54 @@
 Cabane:
   name: "La cabane de Maï"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540396225/cabanemaii.png"
-  description: "E-commerce website for a Franch organic beauty shop. Developped in Rails with Devise, Stripe and Active Admin."
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482251/cabanemaii.png"
+  description: "E-commerce website for a Franch organic beauty shop. <br> Developped in Rails with Devise, Stripe and Active Admin."
   stack: "Rails | Javascript | Heroku | Stripe"
   url: "https://lacabanedemaii.herokuapp.com/"
 HappySeat:
   name: "Happy Seat"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540472276/happyseat.png"
-  description: "Wedding seating plan generator. Final project for Le wagon Bootcamp coded with 3 teammates in 2 weeks (not maintained anymore)."
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482255/happyseat.png"
+  description: "Wedding seating plan generator. <br>Final project for Le wagon Bootcamp coded with 3 teammates <br> in 2 weeks  (not maintained anymore)."
   date: 2018
   stack: "Rails | Javascript | Heroku"
   url: "http://www.happyseat.fr/"
 PYM:
   name: "Pierre-Yves Mori - TCC"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540396240/pymtcc.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482251/pymtcc.png"
   description: "Static Website for a French therapist."
   date: 2018
   stack: "Rails | Heroku"
   url: "https://www.pym-therapeute-tcc.fr"
 FancyCocktail:
   name: "Fancy Cocktail"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540472370/fancycocktail.png"
-  description: "Cocktail Manager that stores cocktails and recipes (coded during Le wagon Bootcamp)."
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482254/fancycocktail.png"
+  description: "Cocktail Manager that stores cocktails and recipes <br> (coded during Le wagon Bootcamp)."
   date: 2018
   stack: "Rails | Heroku"
   url: "https://fancy-cocktail.herokuapp.com/"
 Goosebumps:
   name: "Goosebumps"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540396232/goosebumps.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482249/goosebumps.png"
   description: "Middleman static website for a dj crew."
   stack: "Middleman | GitHub pages"
   url: "https://xelaflash.github.io/goosebumps/"
 ReactChat:
   name: "Rails React chat"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540475904/railsreactchat.png"
-  description: "Single page React live chat app, coded as an exercice for my React learning."
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482251/railsreactchat.png"
+  description: "Single page React live chat app, coded as <br> an exercice for my React learning."
   date: 2018
   stack: "Rails | React | Javascript | Heroku"
   url: "https://reactredux-chat.herokuapp.com/channels/Hardware"
 WagonCity:
   name: "Wagon City"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540473084/wagoncities.png"
-  description: "Single page React app, coded as an exercice for my React learning."
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482256/wagoncities.png"
+  description: "Single page React app, coded as <br> an exercice for my React learning."
   date: 2018
   stack: "React | Javascript | GitHub pages"
   url: "https://xelaflash.github.io/wagon-cities/"
 ReactGif:
   name: "Gif Madness"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540473087/reactgif.png"
-  description: "React gif search engine using Giphy API, coded as an exercice for my React learning."
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482254/gifs.png"
+  description: "React gif search engine using Giphy API, coded <br> as an exercice for my React learning."
   date: 2018
   stack: "React | Javascript | GitHub pages"
   url: "https://xelaflash.github.io/xela-react-gifs/"

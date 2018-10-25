@@ -1,13 +1,24 @@
 #projects-page {
-  height: calc(100vh - 70px);
-  border: 1px solid black;
+  // height: calc(100vh - 70px);
 }
 
 .projects {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items:center;
-  margin: 10px;
+  border:1px solid yellow;
+  height:100%;
+  // padding: 0 auto;
+  width:100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  transform: scale(0.98);
+  will-change: transform;
+  position: relative;
+
+
+  perspective: 500px;
 }
 
 .disclaimer {
@@ -19,20 +30,31 @@
   color:$red;
 }
 
-
-.content {
-  position: relative;
-  width: 80%;
-  margin: 10px auto;
-  overflow: hidden;
-  // border: 1px solid yellow;
+/* START OVERLAY + DRAG ANIM */
+.projects.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  transform: scale(1);
 }
 
-.content .content-overlay {
+
+.item {
+  position: relative;
+  margin: 10px auto;
+  overflow: hidden;
+  width:80%;
+  height: 80%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  // margin: 0 150px;
+  border:1px solid green;
+}
+
+.item .content-overlay {
   background: rgba(47, 65, 106, 0.9);
-  // border: 4px solid white;
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -44,24 +66,27 @@
   transition: all 0.4s ease-in-out 0s;
 }
 
-.content:hover .content-overlay{
+.item:hover .content-overlay{
   opacity: 1;
 }
 
-.content:hover {
+.item:hover {
   border: 1px solid $red;
 }
 
 .content-image{
-  width: 100%;
+  // width: 100%;
+  // height:100%;
+  border: 1px solid orange;
 }
 
 .content-details {
   position: absolute;
+  // display:inline-block;
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
-  width: 60%;
+  width: 70%;
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -71,9 +96,11 @@
   -webkit-transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
+  border: 2px solid white;
 }
 
-.content:hover .content-details{
+
+.item:hover .content-details{
   top: 50%;
   left: 50%;
   opacity: 1;
@@ -94,4 +121,8 @@
   color:white;
   text-shadow: 2px 2px $red;
 }
+/* END OVERLAY + DRAG ANIM */
+
+
+
 
