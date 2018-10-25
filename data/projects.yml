@@ -11,6 +11,13 @@ HappySeat:
   date: 2018
   stack: "Rails | Javascript | Heroku"
   url: "http://www.happyseat.fr/"
+PYM:
+  name: "Pierre-Yves Mori - TCC"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540396240/pymtcc.png"
+  description: "Static Website for a French therapist."
+  date: 2018
+  stack: "Rails | Heroku"
+  url: "https://www.pym-therapeute-tcc.fr"
 FancyCocktail:
   name: "Fancy Cocktail"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540472370/fancycocktail.png"
@@ -18,19 +25,19 @@ FancyCocktail:
   date: 2018
   stack: "Rails | Heroku"
   url: "https://fancy-cocktail.herokuapp.com/"
-PYM:
-  name: "Pierre-Yves Mori - TCC"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540396240/pymtcc.png"
-  description: "Static Website for a French therapist."
-  date: 2018
-  stack: "Rails | Heroku"
 Goosebumps:
   name: "Goosebumps"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540396232/goosebumps.png"
   description: "Middleman static website for a dj crew."
   stack: "Middleman | GitHub pages"
   url: "https://xelaflash.github.io/goosebumps/"
-  url: "https://www.pym-therapeute-tcc.fr"
+ReactChat:
+  name: "Rails React chat"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540475904/railsreactchat.png"
+  description: "Single page React live chat app, coded as an exercice for my React learning."
+  date: 2018
+  stack: "Rails | React | Javascript | Heroku"
+  url: "https://reactredux-chat.herokuapp.com/channels/Hardware"
 WagonCity:
   name: "Wagon City"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540473084/wagoncities.png"
