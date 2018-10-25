@@ -20,9 +20,9 @@
 .content {
   position: relative;
   width: 80%;
-  margin: auto;
+  margin: 10px auto;
   overflow: hidden;
-  border: 1px solid yellow;
+  // border: 1px solid yellow;
 }
 
 .content .content-overlay {
@@ -43,6 +43,10 @@
 
 .content:hover .content-overlay{
   opacity: 1;
+}
+
+.content:hover {
+  border: 1px solid $red;
 }
 
 .content-image{
@@ -75,5 +79,16 @@
 .fadeIn-top-left{
   top: 20%;
   left: 20%;
+}
+
+.url {
+  font-style: italic;
+  color:white;
+  text-decoration: underline;
+}
+
+.url:hover {
+  color:white;
+  text-shadow: 2px 2px $red;
 }
 
