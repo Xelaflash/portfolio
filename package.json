@@ -1,0 +1,14 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Middleman portfolio",
+  "main": "index.js",
+  "repository": "git@github.com:Xelaflash/portofolio.git",
+  "author": "Xelaflash <xelaflash@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
