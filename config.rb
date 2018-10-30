@@ -2,12 +2,17 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
-activate :sprockets
+
+require 'sprockets/es6'
+activate :sprockets do |s|
+  s.supported_output_extensions << '.es6'
+end
 activate :livereload
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
 
 configure :build do
   activate :minify_css
