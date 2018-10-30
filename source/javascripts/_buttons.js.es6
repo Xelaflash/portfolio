@@ -11,7 +11,7 @@ document.querySelector('.form-btn').onmousemove = (e) => {
 // Parallax btn
 document.addEventListener("DOMContentLoaded", function(event) {
   const docStyle = document.documentElement.style
-  const aElem = document.getElementById('parallax')
+  const aElem = document.getElementById('parallax');
   const boundingClientRect = aElem.getBoundingClientRect()
 
   aElem.onmousemove = function(e) {

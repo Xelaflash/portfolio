@@ -17,6 +17,7 @@ page '/*.txt', layout: false
 configure :build do
   activate :minify_css
   activate :minify_javascript
+  activate :minify_html, remove_input_attributes: false
   activate :asset_hash
   activate :relative_assets
   set :relative_links, true
@@ -24,5 +25,6 @@ end
 
 activate :deploy do |deploy|
   deploy.build_before = true
+  deploy.branch       = 'gh-pages'
   deploy.deploy_method = :git
 end
