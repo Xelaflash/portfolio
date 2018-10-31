@@ -1,5 +1,4 @@
 const slider = document.querySelector('.projects');
-console.log(slider)
 let isDown = false;
 let startX;
 let scrollLeft;
