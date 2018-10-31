@@ -1,7 +1,9 @@
 #home {
   height: 100vh;
 }
-
+#home-page {
+  position:relative;
+}
 /* start title */
 .name-title {
   letter-spacing: 3px;
@@ -108,3 +110,23 @@
   margin-bottom: 50px;
 }
 /*  END stack + terminal */
+
+/* go to playground text */
+.go-to-play-text {
+  letter-spacing: 2px;
+  float:left;
+  margin: 130px 0 0 60px;
+  p {
+    margin:0;
+    font-weight: lighter;
+    font-size: 12px;
+  }
+}
+
+.link-play {
+  color:white;
+}
+.link-play:hover {
+  color:white;
+}
+/* END */

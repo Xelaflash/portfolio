@@ -1,18 +1,54 @@
 .bottom {
-  border:1px solid red;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
+  position:absolute;
+  bottom:0;
+  width:100%;
 }
 
-/* go to playground text */
-.bottom-left {
-  letter-spacing: 2px;
-  p {
-    margin:0;
-    font-weight: lighter;
-    font-size: 12px;
+
+/* START scroll icon */
+.scroll-icon {
+  animation: bounce 2s infinite;
+  cursor: pointer;
+  color:white;
+  a {
+    text-decoration: none;
   }
+  .arrow, .fa-chevron-down {
+    color:white;
+    animation: pulse 8s infinite;
+    text-align: center;
+    // padding-bottom: 0.5rem;
+
+    .scroll-text {
+      text-align: center;
+      font-size: 14px;
+      margin-bottom: -0.125rem;
+    }
+  }
+  //
+  // @keyframes bounce {
+  //   0%   { transform: scale(1,1)      translateY(0); }
+  //   10%  { transform: scale(1.1,.9)   translateY(0); }
+  //   30%  { transform: scale(.9,1.1)   translateY(-30px); }
+  //   50%  { transform: scale(1.05,.95) translateY(0); }
+  //   57%  { transform: scale(1,1)      translateY(-7px); }
+  //   64%  { transform: scale(1,1)      translateY(-15px); }
+  //   100% { transform: scale(1,1)      translateY(0); }
+  // }
+  //
+  // @keyframes pulse {
+  //   0% {
+  //     color: #00F3FF;
+  //   }
+  //   40% {
+  //     color: #00FF26;
+  //   }
+  //   60% {
+  //     color: #FFF907;
+  //   }
+  //   100% {
+  //     color: $red;
+  //   }
+  // }
 }
-/* END */
+/* END scroll icon */
