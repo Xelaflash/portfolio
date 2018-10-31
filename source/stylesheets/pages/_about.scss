@@ -1,10 +1,14 @@
 #about{
+  // height: calc(100vh - 70px);
   height: 100vh;
   background:green;
 }
 
+// #about-page {
+//   position:relative;
+// }
+
 .about-content {
-  border:1px solid green;
   max-width: 800px;
   margin:0 auto;
   text-align: justify;
