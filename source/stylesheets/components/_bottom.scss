@@ -1,0 +1,18 @@
+.bottom {
+  border:1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+/* go to playground text */
+.bottom-left {
+  letter-spacing: 2px;
+  p {
+    margin:0;
+    font-weight: lighter;
+    font-size: 12px;
+  }
+}
+/* END */

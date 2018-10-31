@@ -100,26 +100,11 @@
 }
 /* END intro anim */
 
-
+/* stack + terminal */
 .flex-section {
   display:flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-
-
-/* go to playground text */
-.bottom-left {
-  width:40%;
-  position: fixed;
-  bottom: 30px;
-  left:-50px;
-  letter-spacing: 2px;
-  p {
-    margin:0;
-    font-weight: lighter;
-    font-size: 12px;
-  }
-}
-/* END */
+/*  END stack + terminal */
