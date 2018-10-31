@@ -2,14 +2,20 @@
   height: 100vh;
 }
 
-.projects {
+#projects-page {
+  position: relative;
   height:100%;
+}
+
+.projects {
+  position:absolute;
+  height:80%;
   width:100%;
   // overflow-x: hidden;
   overflow-y: hidden;
   white-space: nowrap;
   user-select: none;
-  cursor: pointer;
+  cursor: grab;
   transition: all 0.2s;
   transform: scale(0.98);
   will-change: transform;
@@ -48,19 +54,20 @@
 }
 
 .item {
-  width:80%;
+  width:75%;
   height: 80%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 30px 100px;
+  margin: 70px 140px;
 }
 
 .content-overlay {
+  height:95%;
   background: rgba(47, 65, 106, 0.9);
   position: absolute;
   left: 0;
-  top: 0;
+  top: 10px;
   bottom: 0;
   right: 0;
   opacity: 0;
@@ -93,7 +100,7 @@
 }
 
 .content:hover .content-details{
-  top: 105%;
+  top: 110%;
   left: 120%;
   opacity: 1;
 }
