@@ -1,7 +1,7 @@
 #contact {
   height:100vh;
   padding-top:70px;
-  background:#6200EA;
+  background:#6593F5;
 }
 
 .contact-details {
@@ -146,7 +146,7 @@
         top: var(--y);
         width: var(--size);
         height: var(--size);
-        background: radial-gradient(circle closest-side, #4405f7, transparent);
+        background: radial-gradient(circle closest-side, #ffff00, transparent);
         transform: translate(-50%, -50%);
         transition: width .2s ease, height .2s ease;
     }
