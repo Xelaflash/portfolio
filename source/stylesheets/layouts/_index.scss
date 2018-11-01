@@ -4,6 +4,14 @@
 // @import "profile";
 // @import "map";
 
+html {
+  scroll-behavior: smooth;
+}
+
+a:focus {
+  color:white;
+}
+
 body {
     background: $blue;
 }
@@ -22,7 +30,3 @@ h1, h2,h3,h6, p {
   font-size: 32px;
   margin: 0 0 20px 0;
 }
-
-// .scrollable-section {
-//     height:100vh;
-// }
