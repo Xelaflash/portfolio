@@ -1,15 +1,17 @@
-#projects-page {
-  // height: calc(100vh - 70px);
+#projects {
+  height:100vh;
+  padding-top:70px;
+  background:#2E496A;
 }
 
 .projects {
-  height:100%;
-  width:100%;
   // overflow-x: hidden;
+  width: 70%;
+  margin: 0 auto;
   overflow-y: hidden;
   white-space: nowrap;
   user-select: none;
-  cursor: pointer;
+  cursor: grab;
   transition: all 0.2s;
   transform: scale(0.98);
   will-change: transform;
@@ -25,18 +27,8 @@
   color:$red;
 }
 
-.tools {
-  color:$red;
-}
-
 .content {
   position: relative;
-}
-
-.disclaimer {
-  font-style: italic;
-  font-size: 13px;
-  margin:10px 0 -15px 0;
 }
 
 /* START OVERLAY + DRAG ANIM */
@@ -48,19 +40,19 @@
 }
 
 .item {
-  width:80%;
-  height: 80%;
+  width:65%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 30px 100px;
+  margin: 40px 30px;
 }
 
 .content-overlay {
+  height:91%;
   background: rgba(47, 65, 106, 0.9);
   position: absolute;
   left: 0;
-  top: 0;
+  top: 12px;
   bottom: 0;
   right: 0;
   opacity: 0;
@@ -76,9 +68,7 @@
 .content-details {
   position: absolute;
   text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: 70%;
+  width: 90%;
   top: 0;
   left: 0;
   opacity: 0;
@@ -90,11 +80,33 @@
   transition: all 0.3s ease-in-out 0s;
   border: 2px solid white;
   padding:20px;
+  h3 {
+    font-size: 22px;
+    margin-top: 0;
+  }
+}
+
+.description {
+  font-size: 16px;
+  white-space: pre-line;
+  height: 75px;
+}
+
+.tools {
+  font-size: 18px;
+  color:$red;
+}
+
+.disclaimer {
+  white-space: pre-line;
+  font-style: italic;
+  font-size: 12px;
+  margin:10px 0 -15px 0;
 }
 
 .content:hover .content-details{
-  top: 105%;
-  left: 120%;
+  top: 134%;
+  left: 140%;
   opacity: 1;
 }
 

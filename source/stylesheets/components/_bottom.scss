@@ -1,21 +1,21 @@
+.bottom {
+  position:absolute;
+  bottom:0;
+  width:100%;
+}
+
 /* START scroll icon */
 .scroll-icon {
   animation: bounce 2s infinite;
-  position: fixed;
-  bottom:0;
-  left:0;
   cursor: pointer;
-  margin:0 auto;
   color:white;
-  width:100%;
   a {
     text-decoration: none;
   }
   .arrow, .fa-chevron-down {
-    text-align: center;
-    margin: 0 auto;
     color:white;
     animation: pulse 8s infinite;
+    text-align: center;
     // padding-bottom: 0.5rem;
 
     .scroll-text {

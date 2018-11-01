@@ -1,11 +1,13 @@
-#home-page {
-  // height: 100vh;
+#home {
+  height: 100vh;
 }
-
+#home-page {
+  position:relative;
+}
 /* start title */
 .name-title {
   letter-spacing: 3px;
-  margin: 100px 0 40px 30px;
+  margin: 180px 0 40px 30px;
   width:40%;
   h1{
     color:white;
@@ -100,26 +102,31 @@
 }
 /* END intro anim */
 
-
+/* stack + terminal */
 .flex-section {
   display:flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 50px;
 }
-
+/*  END stack + terminal */
 
 /* go to playground text */
-.bottom-left {
-  width:40%;
-  position: fixed;
-  bottom: 30px;
-  left:-50px;
+.go-to-play-text {
   letter-spacing: 2px;
+  float:left;
+  margin: 0px 0 0 60px;
   p {
     margin:0;
     font-weight: lighter;
     font-size: 12px;
   }
+}
+
+.link-play {
+  color:white;
+}
+.link-play:hover {
+  color:white;
 }
 /* END */

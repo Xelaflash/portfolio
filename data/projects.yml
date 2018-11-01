@@ -7,7 +7,7 @@ Cabane:
 HappySeat:
   name: "Happy Seat"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482255/happyseat.png"
-  description: "Wedding seating plan generator. <br>Final project for Le wagon Bootcamp coded with 3 teammates <br> in 2 weeks  (not maintained anymore)."
+  description: "Wedding seating plan generator. <br>Final bootcamp project coded with 3 teammates (not maintained)"
   date: 2018
   stack: "Rails | Javascript | Heroku"
   url: "http://www.happyseat.fr/"
@@ -52,5 +52,3 @@ ReactGif:
   date: 2018
   stack: "React | Javascript | GitHub pages"
   url: "https://xelaflash.github.io/xela-react-gifs/"
-
-

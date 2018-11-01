@@ -1,28 +1,25 @@
 /* Main navbar */
 
-.fixed-nav nav {
-  // position: fixed;
-  box-shadow:0 1px 1px rgba(255,255,255,0.9);
-}
-
-nav {
-  top:0;
+#navbar {
   width: 100%;
-  transition:all 0.5s;
-  position: relative;
   z-index: 1;
+  background-color: transparent;
+  box-shadow:0 1px 1px rgba(255,255,255,0.9);
+  transition: all 0.6s ease-out;
+  opacity:0;
 }
 
-
+#navbar.scrolled {
+    opacity:1;
+}
 
 .navbar-top {
-  background: $blue;
+  // background: $blue;
   height: 70px;
   padding: 0px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // box-shadow: 0 0 15px #FFFFFF;
 }
 
 /* Right section */
@@ -84,6 +81,19 @@ nav {
 .navbar-link:hover::after {
     width: 100%;
 }
+
+.navbar-nav > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+}
+
+li.active a {
+  color: $red;
+}
+
 
 /* Dropdown menu */
 .navbar-dropdown-menu {

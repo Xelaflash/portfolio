@@ -12,9 +12,7 @@
             <h3 class=""><%= project.name %></h3>
             <hr class="title-sep">
             <p class="description"><%= project.description %></p>
-            <br>
             <p class="tools"><%= project.stack %></p>
-            <br>
             <a class="url" href="<%= project.url %>" target="_blank" rel="noopener noreferrer"><small>Visit Website</small></a>
             <br>
              <p class="text-center disclaimer"><small>Disclaimer : apps hosted on heroku's free plan will take few times to load (server needs to wake up)</small></p>
@@ -24,36 +22,3 @@
     <% end %>
   </div>
 </div>
-
-
-<script>
-  const slider = document.querySelector('.projects');
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-  slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-  });
-
-  slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-
-  slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-  });
-
-  slider.addEventListener('mousemove', (e) => {
-    if (!isDown) return;  // stop the fn from running
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 3;
-    slider.scrollLeft = scrollLeft - walk;
-  });
-</script>

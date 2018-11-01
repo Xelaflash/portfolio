@@ -1,10 +1,11 @@
-#contact-page {
-  // height: calc(100vh - 70px);
-    border: 1px solid red;
-
+#contact {
+  height:100vh;
+  padding-top:70px;
+  background:#6593F5;
 }
 
 .contact-details {
+  margin-top: 100px;
   h6 {
     font-size: 18px;
     letter-spacing: 4px;
@@ -16,10 +17,11 @@
   }
 }
 
-.flex-section {
+.flex-section-details {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 50px;
 }
 
 .flex-sub-section {
@@ -60,20 +62,20 @@
 }
 
 .fa-phone {
-  font-size:24px;
-  padding: 8px;
-  margin-left: 3px;
+  font-size:21px;
+  padding: 9px;
+  color: black;
 }
 
-.fa-globe {
-  font-size:24px;
-  padding: 8px;
-  margin-left: 3px;
+.fa-globe-americas {
+  font-size:22px;
+  padding: 9px;
 }
 
 .fa-envelope {
-  font-size:18px;
-  padding: 11px;
+  font-size:21px;
+  padding: 10px;
+  color: black;
 }
 
 .globe-right {
@@ -144,7 +146,7 @@
         top: var(--y);
         width: var(--size);
         height: var(--size);
-        background: radial-gradient(circle closest-side, #4405f7, transparent);
+        background: radial-gradient(circle closest-side, #ffff00, transparent);
         transform: translate(-50%, -50%);
         transition: width .2s ease, height .2s ease;
     }
@@ -154,4 +156,3 @@
 }
 
 /* END FORM */
-

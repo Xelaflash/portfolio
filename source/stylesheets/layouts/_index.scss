@@ -4,6 +4,14 @@
 // @import "profile";
 // @import "map";
 
+html {
+  scroll-behavior: smooth;
+}
+
+a:focus {
+  color:white;
+}
+
 body {
     background: $blue;
 }
@@ -15,9 +23,8 @@ h1, h2,h3,h6, p {
 .main-title {
   color:$red;
   font-size: 38px;
-  margin:0;
+  margin-top:40px;
 }
-
 
 .sub-title {
   font-size: 32px;

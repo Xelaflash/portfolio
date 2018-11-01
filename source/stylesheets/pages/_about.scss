@@ -1,11 +1,16 @@
-#about-page{
-  // height: calc(100vh - 70px);
+#about{
+  background:#5775b6;
+  height:100vh;
+  padding-top:70px;
 }
 
 .about-content {
-  border:1px solid green;
   max-width: 800px;
   margin:0 auto;
   text-align: justify;
   padding: 0 40px;
+}
+
+.about-text {
+  margin-top: 100px;
 }

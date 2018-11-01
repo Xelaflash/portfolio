@@ -3,103 +3,12 @@
   <h2 class="sub-title text-center">Let's Play Together</h2>
   <p class="text-center">
     Bored of this website ? 😱 <br>
-    Play with the canvas 👩‍🎨👨‍🎨 !
+    Play with the canvas 👩‍🎨 👨‍🎨 !
   </p>
   <div class="parallax-button">
-<!--       <input type="button" id="parallax" value="New Canvas" onClick="window.location.reload()"> -->
-  <a id="parallax" href="#playground-page" data-title="Clear The Canvas" onClick="window.location.reload()"></a>
+    <a id="parallax" href="#playground-page" data-title="Clear The Canvas" onClick="window.location.reload()"></a>
   </div>
-
-  <canvas id="draw"></canvas>
+  <div class="canvas">
+    <canvas id="draw"></canvas>
+  </div>
 </div>
-
-<script>
-  const canvas = document.querySelector('#draw');
-  const bound = canvas.getBoundingClientRect();
-  const ctx = canvas.getContext('2d');
-
-  canvas.width = bound.width;
-  canvas.height = bound.height;
-  ctx.strokeStyle = '#BADA55';
-  ctx.lineJoin = 'round';
-  ctx.lineCap = 'round';
-  ctx.lineWidth = 10;
-  // ctx.globalCompositeOperation = 'multiply';
-
-  let isDrawing = false;
-  let lastX = 0;
-  let lastY = 0;
-  let hue = 0;
-  let direction = true;
-
-  function draw(e) {
-    if (!isDrawing) return; // stop the fn from running when they are not moused down
-    ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
-    ctx.beginPath();
-    // start from
-    ctx.moveTo(lastX, lastY);
-    // go to
-    ctx.lineTo(e.offsetX, e.offsetY);
-    ctx.stroke();
-    [lastX, lastY] = [e.offsetX, e.offsetY];
-
-    hue++;
-    if (hue >= 360) {
-      hue = 0;
-    }
-    if (ctx.lineWidth >= 50 || ctx.lineWidth <= 1) {
-      direction = !direction;
-    }
-
-    if(direction) {
-      ctx.lineWidth++;
-    } else {
-      ctx.lineWidth--;
-    }
-
-  }
-
-  canvas.addEventListener('mousedown', (e) => {
-    isDrawing = true;
-    [lastX, lastY] = [e.offsetX, e.offsetY];
-  });
-
-  canvas.addEventListener('mousemove', draw);
-  canvas.addEventListener('mouseup', () => isDrawing = false);
-  canvas.addEventListener('mouseout', () => isDrawing = false);
-</script>
-
-<script>
-
-document.addEventListener("DOMContentLoaded", function(event) {
-  const docStyle = document.documentElement.style
-  const aElem = document.getElementById('parallax')
-  const boundingClientRect = aElem.getBoundingClientRect()
-
-  aElem.onmousemove = function(e) {
-    const x = e.clientX - boundingClientRect.left
-    const y = e.clientY - boundingClientRect.top
-    const xc = boundingClientRect.width/2
-    const yc = boundingClientRect.height/2
-    const dx = x - xc
-    const dy = y - yc
-
-    docStyle.setProperty('--rx', `${ dy/-1 }deg`)
-    docStyle.setProperty('--ry', `${ dx/10 }deg`)
-  }
-
-  aElem.onmouseleave = function(e) {
-    docStyle.setProperty('--ty', '0')
-    docStyle.setProperty('--rx', '0')
-    docStyle.setProperty('--ry', '0')
-  }
-
-  aElem.onmousedown = function(e) {
-    docStyle.setProperty('--tz', '-25px')
-  }
-
-  document.body.onmouseup = function(e) {
-    docStyle.setProperty('--tz', '-12px')
-  }
-});
-</script>
