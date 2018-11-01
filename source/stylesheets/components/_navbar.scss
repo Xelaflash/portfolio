@@ -83,6 +83,19 @@
     width: 100%;
 }
 
+.navbar-nav > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    background-color: transparent;
+}
+
+li.active a {
+  color: $red;
+}
+
+
 /* Dropdown menu */
 .navbar-dropdown-menu {
   margin-top: 15px;

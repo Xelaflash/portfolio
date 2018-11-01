@@ -7,10 +7,12 @@
     </div>
     <!-- Right Navigation -->
     <div class="navbar-right hidden-xs hidden-sm">
-      <%= link_to "About", "#about", class:"navbar-item navbar-link" %>
-      <%= link_to "Projects", "#projects", class:"navbar-item navbar-link" %>
-      <%= link_to "Contact", "#contact", class:"navbar-item navbar-link" %>
-      <%= link_to "Playground", "#playground", class:"navbar-item navbar-link" %>
+      <ul class="nav navbar-nav">
+        <li><%= link_to "About", "#about", class:"navbar-item navbar-link" %></li>
+        <li><%= link_to "Projects", "#projects", class:"navbar-item navbar-link" %></li>
+        <li><%= link_to "Contact", "#contact", class:"navbar-item navbar-link" %></li>
+        <li><%= link_to "Playground", "#playground", class:"navbar-item navbar-link" %></li>
+      </ul>
     </div>
     <!-- Dropdown appearing on mobile only -->
     <div class="navbar-item-xs hidden-md hidden-lg">
