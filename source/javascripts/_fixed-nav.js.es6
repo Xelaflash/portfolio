@@ -1,17 +1,18 @@
 function checkScroll(){
   const startY = $('#navbar').height() * 6; //The point where the navbar changes in px
   if($(window).scrollTop() > startY){
-      $('#navbar').addClass("scrolled");
-  }else{
-      $('#navbar').removeClass("scrolled");
+    $('#navbar').addClass("scrolled");
+  } else {
+    $('#navbar').removeClass("scrolled");
   }
-}
+};
 
 if($('#navbar').length > 0){
-    $(window).on("scroll load resize", function(){
-        checkScroll();
-    });
-}
+  $(window).on("scroll load resize", function(){
+    checkScroll();
+  });
+};
+
 
 const home = $('#home').offset().top;
 const about = $('#about').offset().top;
@@ -19,7 +20,7 @@ const projects = $('#projects').offset().top;
 const contact = $('#contact').offset().top;
 const playground = $('#playground').offset().top;
 $(document).scroll(function() {
-  const scrollPos = $(document).scrollTop();
+  const scrollPos = $(document).scrollTop() + 70;
   if (scrollPos >= home && scrollPos < about) {
     $('#navbar').css('background-color', '#2E416A');
   } else if (scrollPos >= about && scrollPos < projects) {
