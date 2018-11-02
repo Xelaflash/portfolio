@@ -1,25 +1,10 @@
-// function initUpdateNavbarOnScroll() {
-//   const navbar = document.querySelector('#navbar');
-//   if (navbar) {
-//     window.addEventListener('scroll', () => {
-//       if (window.scrollY >= window.innerHeight) {
-//         navbar.classList.add('navbar-wagon-white');
-//       } else {
-//         navbar.classList.remove('navbar-wagon-white');
-//       }
-//     });
-//   }
-// }
-
-
 function checkScroll(){
-    var startY = $('#navbar').height() * 2; //The point where the navbar changes in px
-
-    if($(window).scrollTop() > startY){
-        $('#navbar').addClass("scrolled");
-    }else{
-        $('#navbar').removeClass("scrolled");
-    }
+  const startY = $('#navbar').height() * 6; //The point where the navbar changes in px
+  if($(window).scrollTop() > startY){
+      $('#navbar').addClass("scrolled");
+  }else{
+      $('#navbar').removeClass("scrolled");
+  }
 }
 
 if($('#navbar').length > 0){
@@ -27,3 +12,23 @@ if($('#navbar').length > 0){
         checkScroll();
     });
 }
+
+const home = $('#home').offset().top;
+const about = $('#about').offset().top;
+const projects = $('#projects').offset().top;
+const contact = $('#contact').offset().top;
+const playground = $('#playground').offset().top;
+$(document).scroll(function() {
+  const scrollPos = $(document).scrollTop();
+  if (scrollPos >= home && scrollPos < about) {
+    $('#navbar').css('background-color', '#2E416A');
+  } else if (scrollPos >= about && scrollPos < projects) {
+    $('#navbar').css('background-color', '#5775b6');}
+    else if (scrollPos >= projects && scrollPos < contact) {
+    $('#navbar').css('background-color', '#2E496A');
+  } else if (scrollPos >= contact && scrollPos < playground) {
+    $('#navbar').css('background-color', '#6593F5');
+  } else if (scrollPos >= playground) {
+    $('#navbar').css('background-color', '#003366');
+  }
+});
