@@ -1,0 +1,42 @@
+.footer {
+  background: #003366;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  padding:30px 0 20px 0;
+  border:1px solid red;
+  p , a {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
+
+#footer-text {
+  margin-bottom:5px;
+}
+
+.fa-heart {
+  color: $red;
+}
+
+#footer-logo {
+  height:60px;
+  margin:0 30px;
+  transition: 0.7s;
+  cursor: help;
+}
+
+#footer-logo:hover {
+  transform: scale(1.1);
+}
+
+.mail {
+  color:white;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.mail:hover {
+  text-decoration: underline;
+  color:white;
+}
