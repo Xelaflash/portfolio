@@ -2,19 +2,19 @@
 
 #navbar {
   width: 100%;
-  z-index: 1;
   background-color: transparent;
   box-shadow:0 1px 1px rgba(255,255,255,0.9);
-  transition: all 0.6s ease-out;
-  opacity:0;
+  visibility: hidden;
+  opacity: 0;
+  transition:visibility 0.8s linear,opacity 1s linear;
 }
 
 #navbar.scrolled {
-    opacity:1;
+  visibility: visible;
+  opacity:1;
+  transition:background-color 0.8s ease-in-out;
 }
-
 .navbar-top {
-  // background: $blue;
   height: 70px;
   padding: 0px 30px;
   display: flex;
@@ -33,15 +33,12 @@
   margin-left:30px;
 }
 
-#logo-pic {
-  width: 60px;
+.logo-pic {
   height:60px;
-  border-radius: 2px;
   transition: 0.7s;
 }
 
-#logo-pic:hover {
-  // box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6), 0px 9px 13px rgba(255, 255, 255, 0.6);
+.logo-pic:hover {
   transform: scale(1.1);
 }
 

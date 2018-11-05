@@ -79,3 +79,18 @@
   width:100%;
   position:absolute;
 }
+
+.up {
+  float:right;
+  margin: -60px 25px 0 0;
+}
+
+.to-top{
+  color:white;
+  text-decoration: none;
+}
+
+.to-top:hover, .fa-angle-double-up:hover  {
+  animation: pulse 2s infinite;
+  text-decoration: none;
+}

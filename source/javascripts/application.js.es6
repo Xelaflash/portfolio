@@ -2,13 +2,7 @@
 //= require bootstrap
 //= require_tree .
 
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+  $(".scroll-next").click(function() {
+    let scrollSection = $(this).closest(".scrollable-section").next().offset().top;
+    $("html, body").animate({scrollTop: scrollSection}, 0);
+  });
