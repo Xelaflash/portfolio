@@ -6,13 +6,13 @@
   box-shadow:0 1px 1px rgba(255,255,255,0.9);
   visibility: hidden;
   opacity: 0;
-  transition:visibility 0.8s ease-out,opacity 0.8s ease-out;
+  transition:visibility 0.8s linear,opacity 1s linear;
 }
 
 #navbar.scrolled {
   visibility: visible;
   opacity:1;
-  transition:background-color 1s ease-out;
+  transition:background-color 1s ease-in-out;
 }
 .navbar-top {
   height: 70px;
@@ -39,7 +39,6 @@
 }
 
 .logo-pic:hover {
-  // box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6), 0px 9px 13px rgba(255, 255, 255, 0.6);
   transform: scale(1.1);
 }
 
