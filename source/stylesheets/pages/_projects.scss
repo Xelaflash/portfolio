@@ -6,7 +6,7 @@
 
 .projects {
   // overflow-x: hidden;
-  width: 70%;
+  width: 76%;
   margin: 0 auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -48,14 +48,17 @@
 }
 
 .content-overlay {
-  height:91%;
-  background: rgba(47, 65, 106, 0.9);
+  background: rgba(45, 73, 106, 1.000);
+  border-radius: 4px;
+  height:90%;
+  width:94%;
   position: absolute;
-  left: 0;
-  top: 12px;
+  left: 17px;
+  top: 13px;
   bottom: 0;
   right: 0;
   opacity: 0;
+  // filter: drop-shadow(0px 0px 5px rgba(255,255,255,0.6));
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
@@ -105,7 +108,7 @@
 }
 
 .content:hover .content-details{
-  top: 134%;
+  top: 122%;
   left: 140%;
   opacity: 1;
 }
