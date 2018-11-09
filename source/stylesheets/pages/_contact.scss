@@ -116,43 +116,28 @@
   max-width: 100%;
 }
 
-
 .form-btn {
-    position: relative;
-    float:right;
-    margin: -15px 15px 10px 0;
-    appearance: none;
-    background: $red;
-    padding:15px 30px;
-    border: none;
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-    outline: none;
-    overflow: hidden;
-    border-radius: 100px;
-    transform-style: preserve-3d;
-    transform: perspective(800px);
-    span {
-        position: relative;
-        pointer-events: none;
-        letter-spacing:2px;
-    }
-    &::before {
-        --size: 0;
-        content: '';
-        position: absolute;
-        left: var(--x);
-        top: var(--y);
-        width: var(--size);
-        height: var(--size);
-        background: radial-gradient(circle closest-side, #ffff00, transparent);
-        transform: translate(-50%, -50%);
-        transition: width .2s ease, height .2s ease;
-    }
-    &:hover::before {
-        --size: 400px;
-    }
+  float:right;
+  margin: 20px -92px 0px 0;
+  transform: translate(-50%,-50%);
+  padding: 15px 40px;
+  font-size: 1em;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  background: linear-gradient(55deg,#fa0000, #E85301, #ffff00);
+  background-size: 400% 400%;
+  transition: all 0.3s ease;
+  &:hover {
+    animation: gradient 4s ease infinite;
+  }
+}
+
+@keyframes gradient {
+  50% {
+    background-position: 100% 0;
+  }
 }
 
 /* END FORM */
