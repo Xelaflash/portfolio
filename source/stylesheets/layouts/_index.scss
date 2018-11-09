@@ -13,7 +13,7 @@ a:focus {
 }
 
 body {
-    background: $blue;
+  background: $blue;
 }
 
 h1, h2,h3,h6, p {
@@ -29,4 +29,8 @@ h1, h2,h3,h6, p {
 .sub-title {
   font-size: 32px;
   margin: 0 0 20px 0;
+}
+
+.scrollable-section {
+  position: relative;
 }

@@ -1,12 +1,8 @@
-.scrollable-section {
-  position:relative;
-}
-
-
 .bottom {
-  position:absolute;
-  bottom:0;
-  left:49%;
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+  display: inline-block;
 }
 
 .bottom:hover {
