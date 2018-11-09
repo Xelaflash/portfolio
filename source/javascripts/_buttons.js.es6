@@ -5,7 +5,7 @@ document.querySelector('.form-btn').onmousemove = (e) => {
   const y = e.pageY - e.target.offsetTop
   e.target.style.setProperty('--x', `${ x }px`)
   e.target.style.setProperty('--y', `${ y }px`)
-}
+  }
 });
 
 // Parallax btn
