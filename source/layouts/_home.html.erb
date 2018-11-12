@@ -1,80 +1,58 @@
 <div class="container" id="home-page">
-  <div class="name-title">
-    <section class="cd-intro">
-      <div class="cd-intro-content bouncy">
-        <h1 class="text-center">Alexandre Gros</h1>
-        <hr class="title-sep">
-        <h2 class="text-center">Fullstack Web Developer</h2>
-      </div>
-    </section>
+  <div class="square">
+    <a href="/">
+      <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966638/white_letters_no_back.png", alt: "Alexandre Gros - Fullstack WebDev", class:"home-nav img-responsive" %>
+    </a>
+    <a href="/">
+      <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966638/white_letters_no_back.png", alt: "Alexandre Gros - Fullstack WebDev", class:"home-nav img-responsive" %>
+    </a>
+    <a href="/">
+      <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966638/white_letters_no_back.png", alt: "Alexandre Gros - Fullstack WebDev", class:"home-nav img-responsive" %>
+    </a>
+    <a href="/">
+      <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966638/white_letters_no_back.png", alt: "Alexandre Gros - Fullstack WebDev", class:"home-nav img-responsive" %>
+    </a>
+
   </div>
-  <div class="flex-section">
-      <div class="term">
-        <div class="term-nav">
-          <div class="circle first"><b>x</b></div>
-          <div class="circle second"><b>-</b></div>
-          <div class="circle third"><b><</b></div>
-          <p>alex-laptop -- -zsh -- 80x24</p>
-        </div>
-        <form>
-          <p> ~ user$
-        </form>
-        <div class="output">
-          <div id="typed-strings">
-            <p>Hi, i'm Alex</p>
-            <p>Interested in a website?</p>
-            <p>Great, i'm available. 👍</p>
-            <p>Don't hesitate to contact me! 🤓 </p>
-          </div>
-          <span id="typed"></span>
-        </div>
-      </div>
-  </div>
-</div>
-<div class="go-to-play-text">
-  <p class="text-center">
-    Not in the mood to browse this website ? 😥 <br>
-    <a class="link-play" href="#playground">Go to the playground directly!</a> 😉
-  </p>
+
+
+  <!-- <div class="go-to-play-text">
+    <p class="text-center">
+      Not in the mood to browse this website ? 😥 <br>
+      <a class="link-play" href="#playground">Go to the playground directly!</a> 😉
+    </p>
+  </div> -->
+
+
 </div>
 <div class="social-link">
-  <div id="social-anim">
-    <div class="cube">
-      <div class="plus">
-        <div class="plus-horizontal"></div>
-        <div class="plus-vertical"></div>
+  <div class="cube">
+    <div class="plus">
+      <div class="plus-horizontal"></div>
+      <div class="plus-vertical"></div>
+    </div>
+    <div class="quadrant">
+      <div class="quadrant__item">
+        <div class="quadrant__item__content">
+          <a href="https://github.com/Xelaflash" class="arrow-up social"  target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
+        </div>
       </div>
-      <div class="quadrant">
-        <div class="quadrant__item">
-          <div class="quadrant__item__content">
-            <a href="https://github.com/Xelaflash" class="arrow-up social"  target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i></a>
-          </div>
+      <div class="quadrant__item">
+        <div class="quadrant__item__content">
+          <a href="https://www.linkedin.com/in/alexandre-gros-46406b27" class="arrow-right social"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
         </div>
-        <div class="quadrant__item">
-          <div class="quadrant__item__content">
-            <a href="https://www.linkedin.com/in/alexandre-gros-46406b27" class="arrow-right social"  target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-          </div>
+      </div>
+      <div class="quadrant__item">
+        <div class="quadrant__item__content">
+          <a href="https://twitter.com/GhostXela" class="arrow-left social"  target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter" aria-hidden="true"></i></a>
         </div>
-        <div class="quadrant__item">
-          <div class="quadrant__item__content">
-            <a href="https://twitter.com/GhostXela" class="arrow-left social"  target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          </div>
-        </div>
-        <div class="quadrant__item">
-          <div class="quadrant__item__content">
-            <a href="https://dev.to/xelaflash" class="arrow-down social" target="_blank" rel="noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i></a>
-            </div>
-          </div>
+      </div>
+      <div class="quadrant__item">
+        <div class="quadrant__item__content">
+          <a href="https://dev.to/xelaflash" class="arrow-down social" target="_blank" rel="noopener noreferrer"><i class="fab fa-dev" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
   </div>
-
-
-<script>
-const typed = new Typed('#typed', {
-  stringsElement: '#typed-strings',
-  typeSpeed: 120,
-  loop: true
-});
-</script>
+</div>
+</div>

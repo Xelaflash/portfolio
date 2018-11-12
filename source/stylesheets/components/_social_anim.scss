@@ -1,14 +1,7 @@
 .social-link {
   float: right;
-  margin: 0px 40px 0 0px;
-}
-
-#social-anim {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin-right: 20px;
+  // margin: -117px 70px 0 0px;
+  margin: -84px 70px 0 0px;
 }
 
 .cube {
@@ -80,13 +73,13 @@
 }
 
 .social {
-  font-size: 30px;
+  font-size: 28px;
   color:white;
   transition: 0.6s;
 }
 
 .social:hover {
-  transform: scale(1.2) !important;
+  transform: scale(1.1) !important;
   color:$blue;
 }
 
@@ -95,7 +88,8 @@
 }
 
 .fa-dev {
-  font-size: 31px;
+  padding-top: 7px;
+  font-size: 30px;
 }
 
 .arrow-down,
