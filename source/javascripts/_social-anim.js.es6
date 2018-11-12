@@ -7,7 +7,7 @@ const isInside = false;
 const tl = new TimelineLite({paused: true});
 tl.timeScale(1.6);
 
-tl.to('.cube', 0.4, {rotation: 45, width: '120px', height: '120px', ease: Expo.easeOut}, 'first');
+tl.to('.cube', 0.4, {rotation: 45, width: '100px', height: '100px', ease: Expo.easeOut}, 'first');
 tl.to('.plus .plus-vertical', 0.3, {height: '0', backgroundColor: '#fa0000', ease: Power1.easeIn}, 'first');
 tl.to('.plus .plus-horizontal', 0.3, {width: '0', backgroundColor: '#fa0000', ease: Power1.easeIn}, 'first');
 tl.to('.cube', 0, {backgroundColor: 'transparent'});

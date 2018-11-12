@@ -3,6 +3,11 @@
   padding-top:70px;
 }
 
+#home-page {
+  position: relative;
+  height: calc(100vh - 70px);
+}
+
 .home-nav {
   width:200px;
   height:200px;
@@ -19,21 +24,22 @@
 
 
 /* go to playground text */
-// .go-to-play-text {
-//   letter-spacing: 2px;
-//   float:left;
-//   margin: 45px 0 0 -100px;
-//   p {
-//     margin:0;
-//     font-weight: lighter;
-//     font-size: 12px;
-//   }
-// }
-//
-// .link-play {
-//   color:white;
-// }
-// .link-play:hover {
-//   color:white;
-// }
+.go-to-play-text {
+  position: absolute;
+  bottom: 5%;
+  left: -5%;
+  letter-spacing: 2px;
+  p {
+    margin:0;
+    font-weight: lighter;
+    font-size: 12px;
+  }
+}
+
+.link-play {
+  color:white;
+}
+.link-play:hover {
+  color:white;
+}
 /* END */
