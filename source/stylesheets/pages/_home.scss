@@ -63,7 +63,6 @@
   overflow: hidden;
   position: relative;
   text-align: left;
-  -webkit-transform: translateZ(0);
   transform: translateZ(0);
 }
 
@@ -84,6 +83,10 @@
   vertical-align: top;
 }
 
+.snip1543 img:hover {
+  transform:  translateX(50%);
+}
+
 .snip1543:before,
 .snip1543:after {
   position: absolute;
@@ -93,7 +96,7 @@
   right: 0;
   content: '';
   background-color: $blue;
-  opacity: 0.8;
+  opacity: 0.5;
   transition: all 0.45s ease;
   visibility: hidden;
 }
@@ -104,6 +107,7 @@
 
 .snip1543:after {
   transform: skew(-30deg) translateX(-70%);
+
 }
 
 .snip1543 figcaption {
@@ -128,10 +132,9 @@
   background-color: $blue;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   content: '';
-  opacity: 0.7;
+  opacity: 0.5;
   z-index: -1;
   visibility: hidden;
-
 }
 
 .snip1543 figcaption:before {
@@ -142,18 +145,15 @@
   transform: skew(-30deg) translateX(-90%);
 }
 
-.snip1543 h3,
-.snip1543 p {
+.snip1543 h3 {
   margin: 0;
   opacity: 0;
   letter-spacing: 1px;
-}
-
-.snip1543 h3 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1em;
 }
+
 
 
 .snip1543 a {
@@ -167,40 +167,45 @@
 
 .snip1543:hover h3 {
   transform: translateY(0);
-  opacity: 0.9;
+  opacity: 1;
   transition-delay: 0.2s;
 }
 
 .snip1543:hover{
   transform: scale(1.2);
-  // box-shadow: 5px 4px 16px rgba(255, 255, 255, 0.6), 3px 4px 4px rgba(255, 255, 255, 0.6);
+  box-shadow: 5px 4px 16px rgba(255, 255, 255, 0.6), 3px 4px 4px rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
 }
 .snip1543:hover:before {
-  transform: skew(30deg) translateX(-20%);
+  transform: skew(30deg) translateX(-25%);
   transition-delay: 0.05s;
   visibility: visible;
+  // opacity: 0.8;
 }
 
 .snip1543:hover:after {
   transform: skew(-30deg) translateX(-10%);
   visibility: visible;
+  transition-delay: 0.05s;
 }
 
 .snip1543:hover figcaption:before {
-  transform: skew(30deg) translateX(-40%);
-  transition-delay: 0.15s;
+  transform: skew(30deg) translateX(-35%);
   visibility: visible;
+  transition-delay: 0.05s;
 }
 
 .snip1543:hover figcaption:after {
   transform: skew(-30deg) translateX(-30%);
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
 }
 
 
 .square:hover > .snip1543 {
     filter: blur(6px);
+    transition: all 0.5s ease;
 }
 .square:hover > .snip1543:hover {
     filter:blur(0);
+    transition: all 0.4s ease;
 }
