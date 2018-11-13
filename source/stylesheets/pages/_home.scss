@@ -79,18 +79,20 @@
   content: '';
   transition: all 0.45s ease;
   visibility: hidden;
+  opacity: 0.5;
+  background-color: $blue;
 }
 
 .letter-anim:before {
   transform: skew(30deg) translateX(-80%);
-    opacity: 0.5;
-    background-color: #2E496A;
+  // opacity: 0.5;
+  // background-color: #2E496A;
 }
 
 .letter-anim:after {
   transform: skew(-30deg) translateX(-70%);
-    background-color: #5775b6;
-    opacity: 0.7;
+  // background-color: #5775b6;
+  // opacity: 0.7;
 
 }
 
@@ -113,7 +115,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color:  #003366;
+  background-color:  $blue;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
   content: '';
   opacity: 0.7;
