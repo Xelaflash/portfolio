@@ -50,3 +50,156 @@
   color:white;
 }
 /* END */
+
+
+
+
+
+
+.snip1543 {
+  // background-color: $red;
+  color: #ffffff;
+  font-size: 16px;
+  // margin: 10px;
+  width:200px;
+  height:200px;
+  overflow: hidden;
+  position: relative;
+  text-align: left;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.snip1543 *,
+.snip1543 *:before,
+.snip1543 *:after {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.snip1543 img {
+  backface-visibility: hidden;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1543:before,
+.snip1543:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  background-color: $red;
+  opacity: 0.8;
+  transition: all 0.45s ease;
+  visibility: hidden;
+}
+
+.snip1543:before {
+  transform: skew(30deg) translateX(-80%);
+}
+
+.snip1543:after {
+  transform: skew(-30deg) translateX(-70%);
+}
+
+.snip1543 figcaption {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+  bottom: 0;
+  padding: 63px 40% 25px 11px;
+
+}
+
+.snip1543 figcaption:before,
+.snip1543 figcaption:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $red;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  content: '';
+  opacity: 0.7;
+  z-index: -1;
+  visibility: hidden;
+
+}
+
+.snip1543 figcaption:before {
+  transform: skew(30deg) translateX(-100%);
+}
+
+.snip1543 figcaption:after {
+  transform: skew(-30deg) translateX(-90%);
+}
+
+.snip1543 h3,
+.snip1543 p {
+  margin: 0;
+  opacity: 0;
+  letter-spacing: 1px;
+}
+
+.snip1543 h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1em;
+}
+
+
+.snip1543 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1543:hover h3 {
+  transform: translateY(0);
+  opacity: 0.9;
+  transition-delay: 0.2s;
+}
+
+.snip1543:hover{
+  transform: scale(1.2);
+  box-shadow: 5px 4px 16px rgba(255, 255, 255, 0.6), 3px 4px 4px rgba(255, 255, 255, 0.6);
+}
+.snip1543:hover:before {
+  transform: skew(30deg) translateX(-20%);
+  transition-delay: 0.05s;
+  visibility: visible;
+}
+
+.snip1543:hover:after {
+  transform: skew(-30deg) translateX(-10%);
+  visibility: visible;
+}
+
+.snip1543:hover figcaption:before {
+  transform: skew(30deg) translateX(-40%);
+  transition-delay: 0.15s;
+  visibility: visible;
+}
+
+.snip1543:hover figcaption:after {
+  transform: skew(-30deg) translateX(-30%);
+  transition-delay: 0.1s;
+}
+
+
+.square:hover > .snip1543 {
+    filter: blur(6px);
+}
+.square:hover > .snip1543:hover {
+    filter:blur(0);
+}
