@@ -1,39 +1,32 @@
 /* start stack logo list */
 .stack {
-  margin-right:20px;
+  width: 40%;
+  border: 1px solid white;
+  margin: 25px auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 4px 16px rgba(255, 255, 255, 0.6), 3px 4px 4px rgba(255, 255, 255, 0.6);
 }
 
 .stack-list {
-
   display: flex;
   align-items: center;
-  margin-bottom:15px;
   cursor: no-drop;
   img {
     margin: 5px 5px;
     transition: 0.9s;
   }
   img:hover {
-    transform: scale(1.8) rotate(360deg);
+    transform: scale(1.1) rotate(360deg);
   }
 }
 
 #list-one {
   justify-content: space-between;
-  width:90%;
 }
 
 #list-two {
-  justify-content: center;
-  width:90%;
-}
-
-#rails {
-  margin-right: 25px;
-}
-
-#list-three {
-  margin: 30px 15px 30px 0;
+  margin-left: 60px;
   font-size: 14px;
   font-weight: lighter;
   letter-spacing: 2px;
