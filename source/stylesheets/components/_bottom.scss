@@ -1,27 +1,29 @@
 .bottom {
   height:60px;
-  margin:0 auto;
+  text-align:center;
 }
 
 /* START scroll icon */
-.bottom:hover {
-  animation: bounce 2s infinite;
-}
-
 .scroll-icon {
+  display: inline-block;
   cursor: pointer;
   color:white;
   a {
     text-decoration: none;
   }
 }
+
+.scroll-icon:hover {
+  animation: bounce 2s infinite;
+}
+
 .arrow, .fa-chevron-down {
   color:white;
   text-align: center;
 }
 
-.scroll-icon:hover, .arrow:hover, .fa-chevron-down:hover {
-animation: pulse 2s infinite;
+.arrow:hover, .fa-chevron-down:hover {
+  animation: pulse 2s infinite;
 }
 
 .scroll-text {
