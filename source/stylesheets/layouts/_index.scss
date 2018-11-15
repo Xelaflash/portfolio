@@ -1,19 +1,17 @@
-// Import your layouts CSS files here.
-// Examples:
-// @import "dashboard";
-// @import "profile";
-// @import "map";
-
 html {
   scroll-behavior: smooth;
 }
 
-a:focus {
-  color:white;
-}
-
 body {
   background: $blue;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a:focus {
+  color:white;
 }
 
 h1, h2,h3,h6, p {
@@ -23,7 +21,7 @@ h1, h2,h3,h6, p {
 .main-title {
   color:$red;
   font-size: 38px;
-  margin-top:40px;
+  // margin-top:40px;
 }
 
 .sub-title {
@@ -32,11 +30,16 @@ h1, h2,h3,h6, p {
 }
 
 .scrollable-section {
-  position: relative;
   min-height:100vh;
   padding-top:70px;
 }
 
-::-webkit-scrollbar {
-  display: none;
+#home-page, #about-page, #projects-page, #contact-page {
+  min-height: calc(100vh - 125px) !important;
+}
+
+@media (min-height: 725px) {
+  .main-title {
+    margin-top:40px;
+  }
 }
