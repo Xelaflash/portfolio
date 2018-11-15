@@ -1,0 +1,48 @@
+@media (min-height: 725px) {
+  // home page
+  .square {
+    margin-top: 50px !important;
+  }
+  .drag-text {
+    margin-bottom: 15px !important;
+  }
+  // end home page
+}
+
+@media (max-height: 750px) {
+  .main-title {
+    margin-top:10px;
+  }
+}
+
+@media (min-height: 800px) {
+  // projects page
+  .projects {
+    width: 82% !important;
+  }
+  .content-overlay {
+    height: 91% !important;
+  }
+  .content:hover .content-details{
+  top: 117% !important;
+  // end projects page
+  }
+}
+
+@media (min-height: 850px) {
+  .main-title {
+    margin-top:40px;
+  }
+  // home page
+  .square {
+    margin-top: 100px !important;
+  }
+  // about page
+  .stack {
+  margin: 55px auto;
+  }
+  // projects page
+  .projects {
+    margin-top: 30px !important;
+  }
+}

@@ -3,8 +3,8 @@
 }
 
 .projects {
-  // overflow-x: hidden;
-  width: 76%;
+  overflow-x: scroll !important;
+  width: 70%;
   margin: 0 auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -15,7 +15,8 @@
   will-change: transform;
   position: relative;
   perspective: 500px;
-  box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6), 3px 9px 13px rgba(255, 255, 255, 0.6);
+  box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6),
+              3px 9px 13px rgba(255, 255, 255, 0.6);
 }
 
 .drag-text {
@@ -52,7 +53,7 @@
   width:94%;
   position: absolute;
   left: 17px;
-  top: 13px;
+  top: 12px;
   bottom: 0;
   right: 0;
   opacity: 0;
@@ -106,7 +107,7 @@
 }
 
 .content:hover .content-details{
-  top: 122%;
+  top: 133%;
   left: 140%;
   opacity: 1;
 }

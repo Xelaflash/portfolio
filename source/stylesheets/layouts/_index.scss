@@ -1,13 +1,15 @@
 html {
   scroll-behavior: smooth;
+  -ms-overflow-style: none;  // IE 10+
+  overflow: -moz-scrollbars-none;  // Firefox
+}
+
+html::-webkit-scrollbar {
+    display: none;  // Safari and Chrome
 }
 
 body {
   background: $blue;
-}
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 a:focus {
@@ -36,10 +38,4 @@ h1, h2,h3,h6, p {
 
 #home-page, #about-page, #projects-page, #contact-page {
   min-height: calc(100vh - 125px) !important;
-}
-
-@media (min-height: 725px) {
-  .main-title {
-    margin-top:40px;
-  }
 }
