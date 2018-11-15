@@ -1,15 +1,13 @@
 .bottom {
-  position: absolute;
-  bottom: 0;
-  left: 48.60%;
+  height:60px;
   margin:0 auto;
 }
 
+/* START scroll icon */
 .bottom:hover {
   animation: bounce 2s infinite;
 }
 
-/* START scroll icon */
 .scroll-icon {
   cursor: pointer;
   color:white;
@@ -22,8 +20,8 @@
   text-align: center;
 }
 
-.arrow:hover, .fa-chevron-down:hover {
-  animation: pulse 2s infinite;
+.scroll-icon:hover, .arrow:hover, .fa-chevron-down:hover {
+animation: pulse 2s infinite;
 }
 
 .scroll-text {

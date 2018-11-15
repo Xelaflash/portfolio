@@ -33,4 +33,10 @@ h1, h2,h3,h6, p {
 
 .scrollable-section {
   position: relative;
+  min-height:100vh;
+  padding-top:70px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
