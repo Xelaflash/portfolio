@@ -1,12 +1,10 @@
 #projects {
-  height:100vh;
-  padding-top:70px;
   background:#2E496A;
 }
 
 .projects {
-  // overflow-x: hidden;
-  width: 76%;
+  overflow-x: scroll !important;
+  width: 67%;
   margin: 0 auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -17,7 +15,8 @@
   will-change: transform;
   position: relative;
   perspective: 500px;
-  box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6), 3px 9px 13px rgba(255, 255, 255, 0.6);
+  box-shadow: 8px 6px 22px rgba(255, 255, 255, 0.6),
+              3px 9px 13px rgba(255, 255, 255, 0.6);
 }
 
 .drag-text {
@@ -44,7 +43,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 30px;
+  margin: 40px 30px 20px 0;
 }
 
 .content-overlay {
@@ -54,13 +53,10 @@
   width:94%;
   position: absolute;
   left: 17px;
-  top: 13px;
+  top: 12px;
   bottom: 0;
   right: 0;
   opacity: 0;
-  // filter: drop-shadow(0px 0px 5px rgba(255,255,255,0.6));
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
 
@@ -75,11 +71,7 @@
   top: 0;
   left: 0;
   opacity: 0;
-  -webkit-transform: translate(-150%, -150%);
-  -moz-transform: translate(-150%, -150%);
   transform: translate(-150%, -150%);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  -moz-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
   border: 2px solid white;
   padding:20px;
@@ -108,7 +100,7 @@
 }
 
 .content:hover .content-details{
-  top: 122%;
+  top: 137%;
   left: 140%;
   opacity: 1;
 }
@@ -129,3 +121,79 @@
   text-shadow: 2px 2px $red;
 }
 /* END OVERLAY + DRAG ANIM */
+
+@media (min-height: 725px) {
+  .drag-text {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-height: 800px) {
+  .projects {
+    width: 82%;
+  }
+  .content-overlay {
+    height: 91%;
+  }
+  .content:hover .content-details{
+    top: 117%;
+  }
+}
+
+@media (min-height: 850px) {
+  .projects {
+    margin-top: 30px;
+  }
+    .item {
+    margin: 60px 30px 50px 0;
+  }
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 812px) {
+  .projects {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .item {
+    width: 100%;
+    margin: 60px 10px 60px 0;
+  }
+  .content-overlay {
+    height: 95%;
+    left: 10px;
+    top: 3px;
+  }
+
+  .content-details {
+    width: 95%;
+    h3 {
+      font-size: 22px;
+    }
+  }
+  .content:hover .content-details{
+    top: 167%;
+    left: 145%;
+  }
+
+  .title-sep {
+    margin: 15px 0;
+  }
+
+  .description {
+    font-size: 14px;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .tools {
+    font-size: 16px;
+  }
+
+  .disclaimer {
+    font-size: 10px;
+    margin:10px 0 -15px 0;
+  }
+}

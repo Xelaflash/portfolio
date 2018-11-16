@@ -1,47 +1,15 @@
 #home {
-  height:100vh;
-  padding-top:70px;
-}
-
-#home-page {
   position: relative;
 }
-
-.home-nav {
-  width:200px;
-  height:200px;
-}
-
-// #a {
-//   border-right:1px solid white;
-//   border-bottom:1px solid white;
-// }
-
-// #l {
-//   border-left:1px solid white;
-// }
-
-// // #e {
-
-// // }
-
-// #x {
-//   border-top:1px solid white;
-// }
-
 .square {
-  width: 402px;
   display:flex;
   flex-wrap: wrap;
-  margin: 50px auto;
+  margin: auto;
 }
 
 /* square anim START*/
 .letter-anim {
   color: #ffffff;
-  font-size: 16px;
-  width:200px;
-  height:200px;
   overflow: hidden;
   position: relative;
   text-align: left;
@@ -85,15 +53,10 @@
 
 .letter-anim:before {
   transform: skew(30deg) translateX(-80%);
-  // opacity: 0.5;
-  // background-color: #2E496A;
 }
 
 .letter-anim:after {
   transform: skew(-30deg) translateX(-70%);
-  // background-color: #5775b6;
-  // opacity: 0.7;
-
 }
 
 .letter-anim figcaption {
@@ -183,40 +146,72 @@
   transition-delay: 0.05s;
 }
 
-
 .square:hover > .letter-anim {
-    filter: blur(6px);
-    transition: all 0.5s ease;
+  filter: blur(6px);
+  transition: all 0.5s ease;
 }
 .square:hover > .letter-anim:hover {
-    filter:blur(0);
-    transition: all 0.4s ease;
+  filter:blur(0);
+  transition: all 0.4s ease;
 }
 /* square anim end */
 
 .market-text {
   max-width:700px;
   font-size: 17px;
-  margin: 0 auto;
+  margin: 70px auto 0 auto;
 }
 
-/* go to playground text */
-.go-to-play-text {
-  position: absolute;
-  bottom: -18%;
-  left: -5%;
-  letter-spacing: 2px;
-  p {
-    margin:0;
-    font-weight: lighter;
-    font-size: 12px;
+@media screen
+  and (min-width: 750px) {
+  .home-nav {
+    width:200px;
+    height:200px;
+  }
+  .square {
+  width: 402px;
+  }
+  .letter-anim {
+    width:200px;
+    height:200px;
   }
 }
 
-.link-play {
-  color:white;
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 812px) {
+  .home-nav {
+    width:125px;
+    height:125px;
+  }
+  .square {
+    width: 250px;
+  }
+  .letter-anim {
+    width:125px;
+    height:125px;
+  }
+
+  .social-link {
+    right: 29px;
+  }
+  .letter-anim h3 {
+    font-size: 26px;
+  }
+
+  .letter-anim figcaption {
+    padding: 30px 40% 25px 11px;
+  }
 }
-.link-play:hover {
-  color:white;
+
+@media (min-height: 725px) {
+  .square {
+    margin-top: 50px;
+  }
 }
-/* END */
+
+@media (min-height: 850px) {
+  .square {
+    margin-top: 100px;
+  }
+}

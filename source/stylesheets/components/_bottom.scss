@@ -1,28 +1,28 @@
 .bottom {
-  position: absolute;
-  bottom: 0;
-  left: 48.60%;
-  margin:0 auto;
-}
-
-.bottom:hover {
-  animation: bounce 2s infinite;
+  height:60px;
+  text-align:center;
 }
 
 /* START scroll icon */
 .scroll-icon {
+  display: inline-block;
   cursor: pointer;
   color:white;
   a {
     text-decoration: none;
   }
 }
-.arrow, .fa-chevron-down {
+
+.scroll-icon:hover {
+  animation: bounce 2s infinite
+}
+
+.arrow, .fa-chevron-down, .scroll-next {
   color:white;
   text-align: center;
 }
 
-.arrow:hover, .fa-chevron-down:hover {
+.arrow:hover, .fa-chevron-down:hover, .scroll-next:hover {
   animation: pulse 2s infinite;
 }
 
