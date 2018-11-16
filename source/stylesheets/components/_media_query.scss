@@ -63,3 +63,27 @@
       font-size: 8px;
     }
 }
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px) {
+
+  // playground
+  .parallax-button {
+    margin: 10px auto !important;
+  }
+
+  .up {
+    margin: 10px 5px 0 0 !important;
+  }
+  // footer
+  .footer-content {
+    flex-direction:column;
+    margin-left:0px;
+  }
+
+  #footer-logo {
+    margin: 15px 30px;
+  }
+
+}
