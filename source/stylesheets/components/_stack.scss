@@ -1,8 +1,22 @@
 /* start stack logo list */
+
+@media screen
+  and (min-width: 750px) {
+  .stack {
+    width: 60%;
+  }
+}
+
+@media screen
+  and (min-width: 1200px) {
+  .stack {
+    width: 40%;
+  }
+}
+
 .stack {
-  width: 40%;
   border: 1px solid white;
-  margin: 25px auto;
+  margin: 20px auto;
   padding: 10px;
   border-radius: 5px;
   box-shadow: 5px 4px 16px rgba(255, 255, 255, 0.6), 3px 4px 4px rgba(255, 255, 255, 0.6);
@@ -11,6 +25,7 @@
 .stack-list {
   display: flex;
   align-items: center;
+
   cursor: no-drop;
   img {
     margin: 5px 5px;
@@ -23,10 +38,15 @@
 
 #list-one {
   justify-content: space-between;
+  margin-bottom:10px;
+}
+
+.stack-two-wrapper {
+  text-align: center;
 }
 
 #list-two {
-  margin-left: 60px;
+  display:inline-block;
   font-size: 14px;
   font-weight: lighter;
   letter-spacing: 2px;
