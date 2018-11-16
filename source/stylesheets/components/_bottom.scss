@@ -14,15 +14,15 @@
 }
 
 .scroll-icon:hover {
-  animation: bounce 2s infinite;
+  animation: bounce 2s infinite
 }
 
-.arrow, .fa-chevron-down {
+.arrow, .fa-chevron-down, .scroll-next {
   color:white;
   text-align: center;
 }
 
-.arrow:hover, .fa-chevron-down:hover {
+.arrow:hover, .fa-chevron-down:hover, .scroll-next:hover {
   animation: pulse 2s infinite;
 }
 

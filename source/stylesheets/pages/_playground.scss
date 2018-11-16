@@ -1,6 +1,4 @@
 #playground {
-  // height:100vh;
-  // padding-top:70px;
   background:#003366;
 }
 
@@ -80,9 +78,17 @@
   position:absolute;
 }
 
+.back-to-top {
+  display: block;
+  height: auto;
+  overflow: hidden;
+}
+
 .up {
+  display:inline-block;
+  height: auto;
   float:right;
-  margin: -60px 25px 0 0;
+  margin-right:25px;
 }
 
 .to-top{
