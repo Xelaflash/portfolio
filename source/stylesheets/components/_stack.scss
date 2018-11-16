@@ -14,6 +14,12 @@
   }
 }
 
+@media (min-height: 850px) {
+  .stack {
+    margin: 55px auto;
+  }
+}
+
 .stack {
   border: 1px solid white;
   margin: 20px auto;
@@ -55,3 +61,19 @@
   }
 }
 /* end stack logo list */
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 812px) {
+  .stack-list {
+    flex-wrap:wrap;
+  }
+
+  #list-one {
+    justify-content: space-around;
+  }
+
+  #list-two {
+    font-size: 13px;
+  }
+}
