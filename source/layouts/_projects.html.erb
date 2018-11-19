@@ -1,6 +1,6 @@
 <div class="container" id="projects-page">
   <h1 class="main-title text-center">02</h1>
-  <h2 class="sub-title text-center">My Work</h2>
+  <h2 class="sub-title text-center" id="projects-sub-title">My Work</h2>
   <p class="text-center drag-text"><small>Click and Drag to browse projects</small></p>
   <div class="projects">
     <% data.projects.each do |owner, project| %>
@@ -14,11 +14,10 @@
             <p class="description"><%= project.description %></p>
             <p class="tools"><%= project.stack %></p>
             <a class="url" href="<%= project.url %>" target="_blank" rel="noopener noreferrer"><small>Visit Website</small></a>
-            <br>
-             <p class="text-center disclaimer"><small>Disclaimer : apps hosted on heroku's free plan will take few times to load (server needs to wake up)</small></p>
           </div>
         </div>
       </div>
     <% end %>
   </div>
+  <p class="text-center disclaimer"><small>Disclaimer : apps hosted on heroku's free plan will take few times to load (server needs to wake up)</small></p>
 </div>
