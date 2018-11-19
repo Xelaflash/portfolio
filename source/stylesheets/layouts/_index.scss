@@ -6,6 +6,8 @@ html {
 
 html::-webkit-scrollbar {
     display: none;  // Safari and Chrome
+    -webkit-display:none;
+
 }
 
 body {
