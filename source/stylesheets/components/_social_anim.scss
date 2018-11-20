@@ -83,11 +83,11 @@
   color:$blue;
 }
 
-.fa-linkedin {
+.linkedin-cross {
   padding-left: 3px;
 }
 
-.fa-dev {
+.dev-cross {
   padding-top: 7px;
   font-size: 30px;
 }
@@ -113,4 +113,40 @@
 
 .arrow-right {
   transform: translateX(-10px);
+}
+
+
+
+.quadrant2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quadrant__item2 {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $red;
+  border-radius: 6px;
+  position: relative;
+}
+
+.quadrant__item__content2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

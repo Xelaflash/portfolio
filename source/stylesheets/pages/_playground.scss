@@ -149,3 +149,13 @@
     margin: 10px 5px 0 0 !important;
   }
 }
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  #draw {
+  // min-height:calc(100vh - 70px);
+  }
+}

@@ -76,7 +76,13 @@
 }
 
 .navbar-link:hover::after {
-    width: 100%;
+  width: 100%;
+}
+
+@media (hover: none) {
+  .navbar-link::after {
+    display: none;
+  }
 }
 
 .navbar-nav > li > a {
@@ -84,13 +90,12 @@
   padding-bottom: 0;
 }
 .nav > li > a:hover, .nav > li > a:focus {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 li.active a {
   color: $red;
 }
-
 
 /* Dropdown menu */
 .navbar-dropdown-menu {
@@ -128,6 +133,13 @@ li.active a {
 .fa-bars {
   color: white;
   cursor: pointer;
+}
+
+.dropdown-menu > .active > a {
+  color: $red !important;
+  text-decoration: none;
+  outline: 0;
+  background-color: white !important;
 }
 
 
