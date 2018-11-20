@@ -155,7 +155,7 @@
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-  #draw {
-  // min-height:calc(100vh - 70px);
+  .canvas {
+    min-height: 300px;
   }
 }
