@@ -136,16 +136,16 @@
   overflow: hidden;
   border-radius: 100px;
   &::before {
-      --size: 0;
-      content: '';
-      position: absolute;
-      left: var(--x);
-      top: var(--y);
-      width: var(--size);
-      height: var(--size);
-      background: radial-gradient(circle closest-side, #FFEB3B, transparent);
-      transform: translate(-50%, -50%);
-      transition: width .2s ease, height .2s ease;
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #FFEB3B, transparent);
+    transform: translate(-50%, -50%);
+    transition: width .2s ease, height .2s ease;
   }
   &:hover::before {
     --size: 400px;
@@ -185,5 +185,24 @@
   .form-btn {
     margin-right: 0;
     margin-bottom:40px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) {
+   .contact-details {
+    margin-top: 0;
+  }
+}
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+ .contact-details {
+    margin-top: 200px;
   }
 }

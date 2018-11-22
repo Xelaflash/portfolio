@@ -209,6 +209,10 @@
   .market-text {
     margin: 50px auto 40px auto;
   }
+  #marketing-text {
+    margin-left:0;
+    text-align: justify;
+  }
 }
 
 @media (min-height: 725px) {
@@ -315,4 +319,25 @@ a.dev{
   .mobileHide {
     display:none;
   }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .home-nav {
+    width:200px;
+    height:200px;
+  }
+  .square {
+  width: 402px;
+  }
+  .letter-anim {
+    width:200px;
+    height:200px;
+  }
+  .market-text {
+    margin: 100px auto 50px auto;
+  }
+
 }
