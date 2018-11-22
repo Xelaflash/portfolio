@@ -158,8 +158,13 @@
 
 .market-text {
   max-width:700px;
-  font-size: 17px;
-  margin: 70px auto 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 50px auto 0 auto;
+}
+
+#marketing-text {
+  margin-left:60px;
 }
 
 @media screen
