@@ -1,7 +1,7 @@
 Cabane:
   name: "La cabane de Maï"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1540482251/cabanemaii.png"
-  description: "E-commerce website for a Franch organic beauty shop. <br> Developped in Rails with Devise, Stripe and Active Admin."
+  description: "E-commerce for an organic beauty shop. <br> Developped with Devise, Stripe and Active Admin."
   stack: "Rails | Javascript | Heroku | Stripe"
   url: "https://lacabanedemaii.herokuapp.com/"
 HappySeat:

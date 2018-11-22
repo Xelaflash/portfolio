@@ -8,6 +8,7 @@ gem 'sprockets-es6'
 gem 'middleman-deploy', git: 'https://github.com/lewagon/middleman-deploy.git'
 gem 'pry-byebug', require: true
 gem "middleman-livereload"
+gem "middleman-favicon-maker"
 
 # Assets
 gem 'font-awesome-sass'

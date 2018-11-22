@@ -10,3 +10,16 @@
   width:300px;
   border-top: 1px solid $red;
 }
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 812px) {
+  .legal-logo {
+    margin: 15px 0 20px 10px;
+  }
+
+  a[href^="tel"]{
+    color:inherit;
+    text-decoration:none;
+  }
+}

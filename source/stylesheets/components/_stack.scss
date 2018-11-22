@@ -77,3 +77,12 @@
     font-size: 13px;
   }
 }
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .stack {
+    margin: 100px auto;
+  }
+}

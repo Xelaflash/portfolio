@@ -1,7 +1,7 @@
 <nav class="navbar-fixed-top" id="navbar">
   <div class="navbar-top">
     <div class="logo">
-      <a href="/">
+      <a href="#home">
         <%= image_tag "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1539966638/white_letters_no_back.png", alt: "Alexandre Gros - Fullstack WebDev", class:"logo-pic img-responsive" %>
       </a>
     </div>
@@ -18,7 +18,7 @@
     <div class="navbar-item-xs hidden-md hidden-lg">
       <div class="dropdown">
         <i class="fas fa-bars dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="navigation"></i>
-        <ul class="dropdown-menu dropdown-menu-right navbar-dropdown-menu">
+        <ul class="dropdown-menu nav navbar-nav dropdown-menu-right navbar-dropdown-menu">
           <li><%= link_to "About", "#about", class:"navbar-item navbar-link" %></li>
           <li><%= link_to "Projects", "#projects", class:"navbar-item navbar-link" %></li>
           <li><%= link_to "Contact", "#contact", class:"navbar-item navbar-link" %></li>

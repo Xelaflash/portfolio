@@ -8,3 +8,26 @@
   padding: 0 40px;
 }
 
+.about-text {
+  max-width: 800px;
+  line-height: 1.6;
+  margin:0 auto;
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .about-text {
+    margin:20px auto;
+  }
+}
+
+@media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .about-text {
+    margin:50px auto;
+  }
+}
