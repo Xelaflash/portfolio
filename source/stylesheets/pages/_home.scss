@@ -330,7 +330,7 @@ a.dev{
     height:200px;
   }
   .square {
-  width: 402px;
+    width: 402px;
   }
   .letter-anim {
     width:200px;
@@ -338,6 +338,12 @@ a.dev{
   }
   .market-text {
     margin: 100px auto 50px auto;
+  }
+    .letter-anim h3 {
+    font-size: 32px;
+  }
+  .letter-anim figcaption {
+    padding: 75px 40% 25px 11px;
   }
 
 }

@@ -1,17 +1,22 @@
 html {
   scroll-behavior: smooth;
   -ms-overflow-style: none;  // IE 10+
-  overflow: -moz-scrollbars-none;  // Firefox
 }
 
 html::-webkit-scrollbar {
     display: none;  // Safari and Chrome
     -webkit-display:none;
-
 }
 
 body {
   background: $blue;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 a:focus {
