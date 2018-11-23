@@ -50,13 +50,6 @@ configure :build do
   }
 end
 
-helper do
-  def my_tags
-    set_meta_tags key => value
-  end
-end
-
-
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.branch       = 'gh-pages'
