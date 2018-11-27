@@ -6,10 +6,10 @@
   box-shadow:0 1px 1px rgba(255,255,255,0.9);
   visibility: hidden;
   opacity: 0;
-  transition:visibility 0.8s linear,opacity 1s linear;
-  -webkit-transition:visibility 0.8s linear,opacity 1s linear;
-  -moz-transition:visibility 0.8s linear,opacity 1s linear;
-   -o-transition:visibility 0.8s linear,opacity 1s linear;
+  transition:visibility 0.6s linear,opacity 1s linear;
+  -webkit-transition:visibility 0.6s linear,opacity 1s linear;
+  -moz-transition:visibility 0.6s linear,opacity 1s linear;
+   -o-transition:visibility 0.6s linear,opacity 1s linear;
 }
 
 #navbar.scrolled {
