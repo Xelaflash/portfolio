@@ -157,7 +157,7 @@
   and (orientation: landscape) {
   .logo-easter {
     top: 25%;
-    left: 25%;
+    left: 30%;
   }
   #board {
     margin-left: -6em;
@@ -172,15 +172,15 @@
   and (orientation: portrait) {
   .intro {
     top:39%;
-    left: 12%;
+    left: 14%;
   }
   .logo-easter {
     width: 500px;
     top: 35%;
-    left: 27%;
+    left: 30%;
   }
   #board {
-    margin-left: -6.5em;
+    margin-left: -6em;
     font-size: 350%;
     width: 12em;
   }
@@ -200,7 +200,7 @@
     left: 35%;
   }
   #board {
-    margin-left: -8em;
+    margin-left: -7.5em;
     font-size: 350%;
     width: 15em;
   }
