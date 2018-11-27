@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title><%= data.site.meta_title %></title>
+    <title><%= current_page.data.title %></title>
     <meta name="description" content="<%= data.site.meta_description %>">
     <meta name="theme-color" content="#2E416A"/>
     <!-- Facebook Open Graph data -->
@@ -37,6 +37,9 @@
     <%= yield %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <%= javascript_include_tag "application" %>
+    <% current_page.data.append_js.each do |jsfile|%>
+      <%= javascript_include_tag jsfile %>
+    <% end if current_page.data.append_js %>
   </body>
 </html>
 

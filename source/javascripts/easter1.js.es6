@@ -1,6 +1,4 @@
-// Sets the number of stars we wish to display
-const numStars = 100;
-
+const numStars = 200;
 // For every star we want to display
 for (let i = 0; i < numStars; i++) {
   let star = document.createElement("div");
@@ -8,11 +6,8 @@ for (let i = 0; i < numStars; i++) {
   var xy = getRandomPosition();
   star.style.top = xy[0] + 'px';
   star.style.left = xy[1] + 'px';
-
-  const easterPage = document.querySelector("easter-1")
-  easterPage.append(star);
+  const starPage = document.getElementById("easter-1");
 }
-
 // Gets random x, y values based on the size of the container
 function getRandomPosition() {
   var y = window.innerWidth;
