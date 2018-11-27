@@ -37,7 +37,9 @@
     <%= yield %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <%= javascript_include_tag "application" %>
-
+    <% current_page.data.append_js.each do |jsfile|%>
+      <%= javascript_include_tag jsfile %>
+    <% end if current_page.data.append_js %>
   </body>
 </html>
 
