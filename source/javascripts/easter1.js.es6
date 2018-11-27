@@ -7,6 +7,7 @@ for (let i = 0; i < numStars; i++) {
   star.style.top = xy[0] + 'px';
   star.style.left = xy[1] + 'px';
   const starPage = document.getElementById("easter-1");
+  starPage.append(star);
 }
 // Gets random x, y values based on the size of the container
 function getRandomPosition() {
