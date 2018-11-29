@@ -2,14 +2,25 @@
  * Your CSS code for flash notices and alerts
 * ------------------------------------- */
 
-.alert {
-  margin: 0;
-  text-align: center;
+.swal-icon--custom {
+  margin:0;
+}
+
+#blue-pill {
+  color: blue;
+}
+
+#red-pill {
+  color:red;
+}
+
+.swal-button--cancel {
   color: white;
+  background-color: blue;
 }
-.alert-info {
-  background: $green;
-}
-.alert-warning {
-  background: $red;
+
+.swal-button--cancel:not([disabled]):hover {
+   background-color: blue;
+   color: white;
+   opacity: 0.6;
 }
