@@ -46,7 +46,7 @@
 .legal {
   color:white;
   padding-top:10px;
-  margin-right:11px;
+  margin-left:5px;
 }
 
 .legal a {
@@ -54,6 +54,20 @@
   font-size: 12px;
   font-style: italic;
   padding:10px;
+}
+
+#cookies-set {
+  outline:none;
+  background-color: transparent;
+  color:white;
+  font-size: 12px;
+  font-style: italic;
+  border:none;
+  letter-spacing: 1px;
+}
+
+#cookies-set:hover {
+  text-decoration:underline;
 }
 
 

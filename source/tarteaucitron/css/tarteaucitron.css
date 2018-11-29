@@ -468,16 +468,16 @@ div#tarteaucitronServices {
   display: none;
   font-size: 15px !important;
   left: 0;
-  padding: 5px 5%;
+  padding: 20px 0;
   position: fixed;
   text-align: center;
   box-sizing: content-box;
   z-index: 2147483645;
   text-align: center;
-  padding: 10px;
   margin: auto;
   width: 100%;
   box-shadow:-1px 0px 3px 1px rgba(255,255,255,0.9);
+  opacity: 0.9;
 }
 
 #tarteaucitronAlertBig #tarteaucitronDisclaimerAlert,
@@ -537,22 +537,28 @@ div#tarteaucitronServices {
 }
 
 #tarteaucitronAlertSmall {
-    background: #000000;
+    background: #fff;
     display: none;
     padding: 0;
     position: fixed;
-    right: 0;
+    left: 10px;
+    bottom: 10px;
     text-align: center;
     width: auto;
     z-index: 2147483646;
+    border-radius:4px !important;
 }
 
 #tarteaucitronAlertSmall #tarteaucitronManager {
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 11px !important;
-    padding: 8px 10px 8px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 30px !important;
+  padding: 7px 10px 0;
+}
+
+#tarteaucitronManager button {
+  border-radius: 7px 7px 2px 2px;
 }
 
 #tarteaucitronAlertSmall #tarteaucitronManager:hover {
@@ -560,14 +566,18 @@ div#tarteaucitronServices {
 }
 
 #tarteaucitronAlertSmall #tarteaucitronManager #tarteaucitronDot {
-    background-color: gray;
-    border-radius: 5px;
     display: block;
     height: 8px;
     margin-bottom: 1px;
     margin-top: 5px;
     overflow: hidden;
     width: 100%;
+}
+
+span#tarteaucitronDot {
+  margin: 7px 0 0 -10px !important;
+  width: calc(100% + 20px) !important;
+  border-radius: 0px 0px 2px 2px !important;
 }
 
 #tarteaucitronAlertSmall #tarteaucitronManager #tarteaucitronDot #tarteaucitronDotGreen,
@@ -595,10 +605,11 @@ div#tarteaucitronServices {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     cursor: pointer;
-    display: inline-block;
+    display: none;
     font-size: 30px;
     padding: 0px 10px;
     vertical-align: top;
+
 }
 
 #tarteaucitronAlertSmall #tarteaucitronCookiesNumber:hover {
