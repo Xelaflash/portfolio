@@ -15,7 +15,6 @@
 
 .scroll-icon:hover {
   animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
 }
 
 .arrow, .fa-chevron-down, .scroll-next {
@@ -25,7 +24,6 @@
 
 .arrow:hover, .fa-chevron-down:hover, .scroll-next:hover {
   animation: pulse 2s infinite;
-  -webkit-animation: pulse 2s infinite;
 }
 
 .scroll-text {

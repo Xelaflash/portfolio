@@ -13,7 +13,6 @@ tarteaucitron.init({
   "moreInfoLink": true, /* Show more info link */
   //"cookieDomain": ".my-multisite-domaine.fr" /* Shared cookie for subdomain */
 });
-tarteaucitron.user.gajsUa = 'UA-130123645-1';
-tarteaucitron.user.gtagUa = 'UA-XXXXXXXX-X';
+tarteaucitron.user.gtagUa = 'UA-130123645-1';
 tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');

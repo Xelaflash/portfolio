@@ -50,15 +50,6 @@ h1, h2,h3,h6, p {
   min-height: calc(100vh - 125px);
 }
 
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-#home-page, #about-page, #projects-page, #contact-page {
-  min-height: calc(100vh - 150px);
-  }
-}
-
 @media (max-height: 750px) {
   .main-title {
     margin-top:10px;

@@ -86,7 +86,7 @@
 }
 
 .content:hover .content-details{
-    opacity: 1;
+  opacity: 1;
 }
 
 .description {
@@ -102,7 +102,6 @@
   color:$red;
   margin-top: 50px;
 }
-
 
 .url {
   font-style: italic;
@@ -214,11 +213,10 @@
   and (max-device-width: 1366px)
   and (orientation: landscape)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .projects {
-      margin: 20px auto 0 auto;
-    }
+  .projects {
+    margin: 20px auto 0 auto;
+  }
 }
-
 
 @media only screen
   and (min-device-width: 1024px)

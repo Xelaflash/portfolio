@@ -68,7 +68,6 @@
   z-index: 1;
   bottom: 0;
   padding: 63px 40% 25px 11px;
-
 }
 
 .letter-anim figcaption:before,
@@ -256,8 +255,6 @@
 }
 
 .social-mobile:active {
-  -webkit-transform: translate(0, 3px);
-  -moz-transform: translate(0, 3px);
   transform: translate(0, 3px);
 }
 
@@ -267,8 +264,6 @@
 }
 
 a.twitter{
- -webkit-box-shadow: 0px 6px 0px #2770aa;
-  -moz-box-shadow: 0px 6px 0px #2770aa;
   box-shadow: 0px 6px 0px #2770aa;
 }
 a.twitter{
@@ -276,8 +271,6 @@ a.twitter{
 }
 
 a.linkedin{
- -webkit-box-shadow: 0px 6px 0px #00537e;
-  -moz-box-shadow: 0px 6px 0px #00537e;
   box-shadow: 0px 6px 0px #00537e;
 }
 a.linkedin{
@@ -285,8 +278,6 @@ a.linkedin{
 }
 
 a.github{
- -webkit-box-shadow: 0px 6px 0px #711a00;
-  -moz-box-shadow: 0px 6px 0px #711a00;
   box-shadow: 0px 6px 0px #711a00;
 }
 a.github{
@@ -294,8 +285,6 @@ a.github{
 }
 
 a.dev{
- -webkit-box-shadow: 0px 6px 0px #000000;
-  -moz-box-shadow: 0px 6px 0px #000000;
   box-shadow: 0px 6px 0px #000000;
 }
 a.dev{
@@ -345,5 +334,4 @@ a.dev{
   .letter-anim figcaption {
     padding: 75px 40% 25px 11px;
   }
-
 }
