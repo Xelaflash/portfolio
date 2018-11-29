@@ -1,0 +1,207 @@
+#easter-1 {
+  margin: 0;
+  padding:0;
+  background: black !important;
+  min-height:100vh;
+  width:100%;
+  p {
+  color: #FFFF82;
+  }
+}
+.yellow-sep {
+  border-top: 1px solid #FFFF82;
+}
+
+.star {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: white;
+}
+
+/* Set the animation, color, size and hide the text */
+.intro {
+    position: absolute;
+    top: 30%;
+    left: 29%;
+    z-index: 1;
+    animation: intro 6s ease-out 1s;
+    font-weight: 400;
+    font-size: 300%;
+    opacity: 0;
+    h1 {
+      color: rgb(75, 213, 238);
+    }
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Set the animation & hide the logo */
+.logo-easter {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    z-index: 1;
+    margin: auto;
+    animation: logo-easter 9s ease-out 9s;
+    opacity: 0;
+    width: 693.615px;
+    height: 419.375px;
+}
+
+.logo-easter svg {
+    width: inherit;
+}
+
+/* Scale the logo down and maintain it centered */
+@keyframes logo-easter {
+    0% {
+        width: 18em;
+        transform: scale(2.75);
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+        width: 18em;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.1);
+        width: 18em;
+    }
+}
+
+/* Set the font, lean the board, position it */
+#board {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(300px) rotateX(25deg);
+  transform-origin: 50% 100%;
+  text-align: justify;
+  position: absolute;
+  margin-left: -9em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%;
+}
+
+#board:after {
+  position: absolute;
+  content: ' ';
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* Set the scrolling animation and position it */
+#content {
+  animation: scroll-easter 100s linear 16s;
+  position: absolute;
+  top: 100%;
+}
+
+#title, #subtitle {
+  text-align: center;
+}
+
+@keyframes scroll-easter {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 812px) {
+  .intro {
+    left: 12%;
+    top:30%;
+  }
+  .logo-easter {
+    width: 300px;
+    height: 200px;
+    top: 35%;
+    left: 6%;
+  }
+  #board {
+    margin-left: -4em;
+    font-size: 250%;
+    width: 8em;
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .logo-easter {
+    top: 25%;
+    left: 30%;
+  }
+  #board {
+    margin-left: -6em;
+    width: 12em;
+  }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (orientation: portrait) {
+  .intro {
+    top:39%;
+    left: 14%;
+  }
+  .logo-easter {
+    width: 500px;
+    top: 35%;
+    left: 30%;
+  }
+  #board {
+    margin-left: -6em;
+    font-size: 350%;
+    width: 12em;
+  }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (orientation: landscape) {
+  .intro {
+    top:37%;
+    left: 22%;
+  }
+  .logo-easter {
+    top: 40%;
+    left: 35%;
+  }
+  #board {
+    margin-left: -7.5em;
+    font-size: 350%;
+    width: 15em;
+  }
+}

@@ -1,0 +1,105 @@
+---
+title: Easter Egg - Matrix
+---
+
+<div class="container-fluid" id="easter-2">
+  <canvas id="code-rain"></canvas>
+  <a href="index.html" class="back-reality">Back_to your Virtual_Reality</a>
+</div>
+
+<script>
+
+  const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%¥µ§ØΩφΣπ     $Üñþ√ϖϑβξ¶Æ日_-|ｦｲｸｺｿﾁﾄﾉﾌﾔﾖﾙﾚﾛﾝﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍ";
+
+  const canvasMatrix = document.getElementById("code-rain");
+  const ctxMatrix = canvasMatrix.getContext("2d");
+  canvasMatrix.height = window.innerHeight;
+  canvasMatrix.width = window.innerWidth;
+  matrix.split("");
+
+  const font_size = 11;
+  const columns = canvasMatrix.width / font_size;
+  const drops = [];
+  for(let x = 0; x < columns; x++)
+  drops[x] = 1;
+
+  function draw() {
+    ctxMatrix.fillStyle = "rgba(0, 0, 0, 0.04)";
+    ctxMatrix.fillRect(0, 0, canvasMatrix.width, canvasMatrix.height);
+
+    ctxMatrix.fillStyle = "#0F0"; //green text
+    ctxMatrix.font = font_size + "px arial";
+
+    for( let i = 0; i < drops.length; i++ ) {
+      let text = matrix[ Math.floor( Math.random() * matrix.length ) ];
+      ctxMatrix.fillText(text, i * font_size, drops[i] * font_size);
+      if( drops[i] * font_size > canvasMatrix.height && Math.random() > 0.975 )
+      drops[i] = 0;
+      drops[i]++;
+    }
+  };
+  setInterval( draw, 100 );
+
+  function Randomiser(el, count, delay) {
+    this.element = el;
+    this.originalText = el.textContent || el.innerText || '';
+    this.places = [];
+    this.currentText = [];
+    this.count = count || 3;   // iterations before fixing a character
+    this.delay = delay || 150; // milliseconds between updates
+    this.iteration = 0;
+    this.startTime = new Date();
+    var i = this.originalText.length;
+    while (i--) {
+      this.places[i] = [i];
+    }
+  }
+
+// text randomiser
+  Randomiser.prototype.randomise = function() {
+    var i = this.places.length;
+    while (i--) {
+      this.currentText[this.places[i]] = matrix.charAt((Math.random() * matrix.length) | 0);
+    }
+    this.iteration += 1;
+  }
+
+  Randomiser.prototype.setContent = function() {
+    var t = this.currentText.join('');
+    if (typeof this.element.textContent == 'string') {
+      this.element.textContent = t;
+    } else {
+      this.element.innerText = t;
+    }
+  }
+
+  Randomiser.prototype.run = function() {
+    var n;
+    var temp = [];
+    // If first run, randomise to initiate
+    if (!this.iteration) {
+      this.randomise();
+    }
+    // If there are places left
+    if (this.places.length) {
+      // If reached count, randomly remove one place and set its character
+      // to the original value
+      if (!(this.iteration % this.count)) {
+        n = this.places.splice((Math.random() * this.places.length|0), 1)[0];
+        this.currentText[n] = this.originalText.charAt(n);
+      }
+      // Randomise the string and call itself
+      this.randomise();
+      this.setContent();
+      var randomiser = this;
+      setTimeout(function(){randomiser.run();}, this.delay);
+    }
+    // If no places left, end
+  }
+  // Kick it off
+  var r = new Randomiser(document.querySelector('.back-reality'), 5, 200);
+  r.run();
+
+</script>
+
+
