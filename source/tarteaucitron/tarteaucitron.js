@@ -725,8 +725,8 @@ var tarteaucitron = {
                 tarteaucitron.userInterface.css(c + 'AllDenied', 'opacity', '1');
                 tarteaucitron.userInterface.css(c + 'AllDenied', 'backgroundColor', redDark);
             } else {
-                tarteaucitron.userInterface.css(c + 'AllAllowed', 'opacity', '0.4');
-                tarteaucitron.userInterface.css(c + 'AllDenied', 'opacity', '0.4');
+                tarteaucitron.userInterface.css(c + 'AllAllowed', 'opacity', '1');
+                tarteaucitron.userInterface.css(c + 'AllDenied', 'opacity', '1');
             }
 
             // close the alert if all service have been reviewed

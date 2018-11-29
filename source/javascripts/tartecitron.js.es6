@@ -2,7 +2,7 @@ tarteaucitron.init({
   "privacyUrl": "/privacy.html", /* Privacy policy url */
   "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
   "cookieName": "tartaucitron", /* Cookie name */
-  "orientation": "top", /* Banner position (top - bottom) */
+  "orientation": "bottom", /* Banner position (top - bottom) */
   "showAlertSmall": true, /* Show the small banner on bottom right */
   "cookieslist": true, /* Show the cookie list */
   "adblocker": false, /* Show a Warning if an adblocker is detected */
