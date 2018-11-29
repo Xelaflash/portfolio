@@ -21,67 +21,67 @@
 
 /* Set the animation, color, size and hide the text */
 .intro {
-    position: absolute;
-    top: 30%;
-    left: 29%;
-    z-index: 1;
-    animation: intro 6s ease-out 1s;
-    font-weight: 400;
-    font-size: 300%;
-    opacity: 0;
-    h1 {
-      color: rgb(75, 213, 238);
-    }
+  position: absolute;
+  top: 30%;
+  left: 29%;
+  z-index: 1;
+  animation: intro 6s ease-out 1s;
+  font-weight: 400;
+  font-size: 300%;
+  opacity: 0;
+  h1 {
+    color: rgb(75, 213, 238);
+  }
 }
 
 @keyframes intro {
-    0% {
-        opacity: 0;
-    }
-    20% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+      opacity: 0;
+  }
+  20% {
+      opacity: 1;
+  }
+  90% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
 }
 
 /* Set the animation & hide the logo */
 .logo-easter {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    z-index: 1;
-    margin: auto;
-    animation: logo-easter 9s ease-out 9s;
-    opacity: 0;
-    width: 693.615px;
-    height: 419.375px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  z-index: 1;
+  margin: auto;
+  animation: logo-easter 9s ease-out 9s;
+  opacity: 0;
+  width: 693.615px;
+  height: 419.375px;
 }
 
 .logo-easter svg {
-    width: inherit;
+  width: inherit;
 }
 
 /* Scale the logo down and maintain it centered */
 @keyframes logo-easter {
-    0% {
-        width: 18em;
-        transform: scale(2.75);
-        opacity: 1;
-    }
-    50% {
-        opacity: 1;
-        width: 18em;
-    }
-    100% {
-        opacity: 0;
-        transform: scale(0.1);
-        width: 18em;
-    }
+  0% {
+    width: 18em;
+    transform: scale(2.75);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+    width: 18em;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.1);
+    width: 18em;
+  }
 }
 
 /* Set the font, lean the board, position it */
@@ -122,12 +122,12 @@
 }
 
 @keyframes scroll-easter {
-    0% {
-        top: 100%;
-    }
-    100% {
-        top: -170%;
-    }
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -170%;
+  }
 }
 
 @media only screen
