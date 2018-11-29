@@ -14,5 +14,6 @@ tarteaucitron.init({
   //"cookieDomain": ".my-multisite-domaine.fr" /* Shared cookie for subdomain */
 });
 tarteaucitron.user.gtagUa = 'UA-130123645-1';
-tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
+tarteaucitron.user.analyticsAnonymizeIp = true;
+tarteaucitron.user.gtagMore = function () { };
 (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
