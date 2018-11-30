@@ -19,7 +19,7 @@ function bindSweetAlertButton(e) {
         window.location.href = "/easter-matrix.html";
       });
   } else {
-    swal("You choosed to stay in your illusional reality!", {
+    swal("You chose to stay in your illusion reality!", {
       icon: "error"
       });
     }
