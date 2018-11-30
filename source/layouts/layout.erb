@@ -24,6 +24,22 @@
     <meta name="twitter:image:src" content="https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_auto/v1543600470/meta2.png">
     <%= stylesheet_link_tag "application" %>
     <script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script>
+    <script type="text/javascript">
+      tarteaucitron.init({
+        "privacyUrl": "/privacy.html",
+        "hashtag": "#tarteaucitron",
+        "cookieName": "tartaucitron",
+        "orientation": "bottom",
+        "showAlertSmall": false,
+        "cookieslist": true,
+        "adblocker": false,
+        "AcceptAllCta" : true,
+        "highPrivacy": false,
+        "handleBrowserDNTRequest": false,
+        "removeCredit": true,
+        "moreInfoLink": true
+      });
+    </script>
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="70" class="preload">
     <%= partial "layouts/navbar" %>
@@ -31,6 +47,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <%= auto_javascript_include_tag %>
+    <script type="text/javascript">
+      tarteaucitron.user.gtagUa = 'UA-130123645-1';
+      tarteaucitron.user.analyticsAnonymizeIp = true;
+      tarteaucitron.user.gtagMore = function () { };
+      (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+    </script>
   </body>
 </html>
 
