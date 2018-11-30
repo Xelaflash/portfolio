@@ -1,53 +1,53 @@
 Cabane:
   name: "La cabane de Maï"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543247955/cabanemaii.png"
-  description: "E-commerce for an organic beauty shop. <br> Developped with Devise, Stripe and Active Admin."
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543603310/cabanemaii.png"
+  description: "E-commerce website for an organic beauty shop. <br> Developped with Devise, Stripe and Active Admin."
   stack: "Rails | Javascript | Heroku | Stripe"
   url: "https://lacabanedemaii.herokuapp.com/"
 HappySeat:
   name: "Happy Seat"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543247969/happyseat.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543603694/happyseat.png"
   description: "Wedding seating plan generator. <br>Final bootcamp project coded with 3 teammates (not maintained)"
   date: 2018
   stack: "Rails | Javascript | Heroku"
   url: "http://www.happyseat.fr/"
 PYM:
   name: "Pierre-Yves Mori - TCC"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543247965/pymtcc.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543603853/pymtcc.png"
   description: "Static Website for a French therapist."
   date: 2018
   stack: "Rails | Heroku"
   url: "https://www.pym-therapeute-tcc.fr"
 FancyCocktail:
   name: "Fancy Cocktail"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543247956/fancycocktail.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543604262/fancycocktail.png"
   description: "Cocktail Manager that stores cocktails and recipes <br> (coded during Le wagon Bootcamp)."
   date: 2018
   stack: "Rails | Heroku"
   url: "https://fancy-cocktail.herokuapp.com/"
 Goosebumps:
   name: "Goosebumps"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543247959/goosebumps.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543604262/goosebumps.png"
   description: "Middleman static website for a dj crew."
   stack: "Middleman | GitHub pages"
   url: "https://xelaflash.github.io/goosebumps/"
 ReactChat:
   name: "Rails React chat"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543247966/railsreactchat.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543604262/railsreactchat.png"
   description: "Single page React live chat app, coded as <br> an exercice for my React learning."
   date: 2018
   stack: "Rails | React | Javascript | Heroku"
   url: "https://reactredux-chat.herokuapp.com/channels/Hardware"
 WagonCity:
   name: "Wagon City"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543247968/wagoncities.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543604263/wagoncities.png"
   description: "Single page React app, coded as <br> an exercice for my React learning."
   date: 2018
   stack: "React | Javascript | GitHub pages"
   url: "https://xelaflash.github.io/wagon-cities/"
 ReactGif:
   name: "Gif Madness"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543247959/gifs.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543604263/gifs.png"
   description: "React gif search engine using Giphy API, coded <br> as an exercice for my React learning."
   date: 2018
   stack: "React | Javascript | GitHub pages"

@@ -8,7 +8,7 @@ function bindSweetAlertButton(e) {
   swal({
     title: "Red or Blue pill?",
     content: elem,
-    icon:'https://res.cloudinary.com/dcf4y5ngp/image/upload/v1543430920/morpheus2.png',
+    icon:'https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_auto/v1543430920/morpheus2.png',
      buttons: ["Blue pill", "Red pill"],
     dangerMode: true,
   }).then(function(isConfirm) {
