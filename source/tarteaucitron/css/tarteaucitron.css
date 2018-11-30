@@ -80,9 +80,9 @@ div#tarteaucitronServices {
         text-align: center !important;
     }
 
-        #tarteaucitron #tarteaucitronServices .tarteaucitronLine .tarteaucitronAsk button {
-            margin-bottom: 5px;
-        }
+    #tarteaucitron #tarteaucitronServices .tarteaucitronLine .tarteaucitronAsk button {
+      margin-bottom: 5px;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width:991px) {
@@ -93,6 +93,16 @@ div#tarteaucitronServices {
         max-height: 80% !important;
         width: 90% !important;
     }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  #tarteaucitron {
+    top: 125px !important;
+  }
+
 }
 
 /***
