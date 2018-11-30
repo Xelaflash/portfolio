@@ -45,8 +45,8 @@ title: Easter Egg - Matrix
     this.originalText = el.textContent || el.innerText || '';
     this.places = [];
     this.currentText = [];
-    this.count = count || 3;   // iterations before fixing a character
-    this.delay = delay || 150; // milliseconds between updates
+    this.count = count || 2;   // iterations before fixing a character
+    this.delay = delay || 100; // milliseconds between updates
     this.iteration = 0;
     this.startTime = new Date();
     var i = this.originalText.length;
@@ -97,7 +97,7 @@ title: Easter Egg - Matrix
     // If no places left, end
   }
   // Kick it off
-  var r = new Randomiser(document.querySelector('.back-reality'), 5, 200);
+  var r = new Randomiser(document.querySelector('.back-reality'), 5, 100);
   r.run();
 
 </script>
