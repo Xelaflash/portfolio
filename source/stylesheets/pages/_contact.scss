@@ -171,15 +171,12 @@
   .contact-med-1, .contact-med-2 , .contact-med-3 {
     margin: 10px auto;
   }
-
   .flex-sub-section {
     margin-left:25px;
   }
-
   .contact-address {
     margin-bottom: 25px;
   }
-
   .form-btn {
     margin-right: 0;
     margin-bottom:40px;
@@ -188,11 +185,17 @@
 
 @media only screen
   and (min-device-width: 768px)
-  and (max-device-width: 1024px)
+  and (max-device-width: 1023px)
   and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 1) {
    .contact-details {
     margin-top: 0;
+  }
+  .contact-address {
+    margin-bottom: 0;
+  }
+  .flex-section-details {
+    margin-bottom: 0;
   }
 }
 
@@ -203,4 +206,10 @@
  .contact-details {
     margin-top: 200px;
   }
+  // .flex-sub-section {
+  //   margin-left:25px;
+  // }
+  // .contact-address {
+  //   margin-bottom: 25px;
+  // }
 }

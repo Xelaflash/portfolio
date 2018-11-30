@@ -216,6 +216,16 @@
   .projects {
     margin: 20px auto 0 auto;
   }
+
+}
+
+@media only screen
+  and (min-device-width: 834px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .tools {
+    margin-top:0
+  }
 }
 
 @media only screen
