@@ -1,20 +1,18 @@
 /*jslint browser: true, evil: true */
 
 // define correct path for files inclusion
+var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
 var scripts = document.getElementsByTagName('script'),
-    path = scripts[scripts.length - 1].src.split('?')[0],
-    var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
-    tarteaucitronForceCDN = (tarteaucitronForceCDN === undefined) ? '' : tarteaucitronForceCDN,
-    cdn = (tarteaucitronForceCDN === '') ? path.split('/').slice(0, -1).join('/') + '/' : tarteaucitronForceCDN,
-    alreadyLaunch = (alreadyLaunch === undefined) ? 0 : alreadyLaunch,
-    tarteaucitronForceLanguage = (tarteaucitronForceLanguage === undefined) ? '' : tarteaucitronForceLanguage,
-    tarteaucitronForceExpire = (tarteaucitronForceExpire === undefined) ? '' : tarteaucitronForceExpire,
-    tarteaucitronCustomText = (tarteaucitronCustomText === undefined) ? '' : tarteaucitronCustomText,
-    timeExipre = 31536000000,
-    tarteaucitronProLoadServices,
-    tarteaucitronNoAdBlocker = false;
-
-
+  path = scripts[scripts.length - 1].src.split('?')[0],
+  tarteaucitronForceCDN = (tarteaucitronForceCDN === undefined) ? '' : tarteaucitronForceCDN,
+  cdn = (tarteaucitronForceCDN === '') ? path.split('/').slice(0, -1).join('/') + '/' : tarteaucitronForceCDN,
+  alreadyLaunch = (alreadyLaunch === undefined) ? 0 : alreadyLaunch,
+  tarteaucitronForceLanguage = (tarteaucitronForceLanguage === undefined) ? '' : tarteaucitronForceLanguage,
+  tarteaucitronForceExpire = (tarteaucitronForceExpire === undefined) ? '' : tarteaucitronForceExpire,
+  tarteaucitronCustomText = (tarteaucitronCustomText === undefined) ? '' : tarteaucitronCustomText,
+  timeExipre = 31536000000,
+  tarteaucitronProLoadServices,
+  tarteaucitronNoAdBlocker = false;
 
 var tarteaucitron = {
     "version": 20181023,
