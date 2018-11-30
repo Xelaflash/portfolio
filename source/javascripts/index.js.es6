@@ -21,5 +21,5 @@ console.log(`
 ██║  ██║███████╗███████╗███████╗╚██████╔╝    ╚███╔███╔╝╚██████╔╝██║  ██║███████╗██████╔╝
 ╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝ ╚═════╝      ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝══════╝`);
 console.log("%c So, you are checking the console?? 🤘(-‿-)🤘", 'color:#fa0000');
-console.log('%c I knew it... And i have cleaned the house ¯\\_(ツ)_/¯ ', 'color:#2E416A');
 console.log("%c Feel free to contact me if you want to work with me or even just to say you liked browsing this website. 👻 🤙 ", 'color:#60D')
+console.log("%c If you see the error below 👇, it's because you have accepted the analytics cookie. The script is blocked by client. ¯\\_(ツ)_/¯", 'color:#2E416A');
