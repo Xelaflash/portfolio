@@ -44,9 +44,9 @@
   <body data-spy="scroll" data-target="#navbar" data-offset="70" class="preload">
     <%= partial "layouts/navbar" %>
     <%= yield %>
-    <%= auto_javascript_include_tag %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <%= auto_javascript_include_tag %>
     <script type="text/javascript">
       tarteaucitron.user.gtagUa = 'UA-130123645-1';
       tarteaucitron.user.analyticsAnonymizeIp = true;
