@@ -1,7 +1,7 @@
 /*jslint browser: true, evil: true */
 
 // define correct path for files inclusion
-// var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
+var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
 var scripts = document.getElementsByTagName('script'),
     path = scripts[scripts.length - 1].src.split('?')[0],
     tarteaucitronForceCDN = (tarteaucitronForceCDN === undefined) ? '' : tarteaucitronForceCDN,
