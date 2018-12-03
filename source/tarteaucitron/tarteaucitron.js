@@ -1,8 +1,7 @@
 /*jslint browser: true, evil: true */
 
 // define correct path for files inclusion
-var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
-console.log(tarteaucitronForceCDN);
+// var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
 var scripts = document.getElementsByTagName('script'),
     path = scripts[scripts.length - 1].src.split('?')[0],
     tarteaucitronForceCDN = (tarteaucitronForceCDN === undefined) ? '' : tarteaucitronForceCDN,
@@ -14,7 +13,6 @@ var scripts = document.getElementsByTagName('script'),
     timeExipre = 31536000000,
     tarteaucitronProLoadServices,
     tarteaucitronNoAdBlocker = false;
-
 
 
 var tarteaucitron = {
@@ -225,6 +223,10 @@ var tarteaucitron = {
             },
             params = tarteaucitron.parameters;
 
+            console.log(cdn);
+            console.log(pathToLang);
+            console.log(pathToServices);
+
         // Step 0: get params
         if (params !== undefined) {
 
@@ -249,6 +251,8 @@ var tarteaucitron = {
             linkElement.href = cdn + 'css/tarteaucitron.css?v=' + tarteaucitron.version;
             document.getElementsByTagName('head')[0].appendChild(linkElement);
         }
+
+        console.log(linkElement);
         // Step 2: load language and services
         tarteaucitron.addScript(pathToLang, '', function () {
 
