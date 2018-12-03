@@ -220,6 +220,7 @@ var tarteaucitron = {
                 "useExternalCss": false
             },
             params = tarteaucitron.parameters;
+                        console.log(cdn);
 
         // Step 0: get params
         if (params !== undefined) {
