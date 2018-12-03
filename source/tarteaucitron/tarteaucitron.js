@@ -14,6 +14,7 @@ var scripts = document.getElementsByTagName('script'),
     tarteaucitronNoAdBlocker = false;
 
 
+
 var tarteaucitron = {
     "version": 20181023,
     "cdn": cdn,
@@ -202,8 +203,8 @@ var tarteaucitron = {
         "use strict";
         var cdn = tarteaucitron.cdn,
             language = tarteaucitron.getLanguage(),
-            pathToServices = cdn + 'tarteaucitron.services.js?v=' + tarteaucitron.version,
             pathToLang = cdn + 'lang/tarteaucitron.' + language + '.js?v=' + tarteaucitron.version,
+            pathToServices = cdn + 'tarteaucitron.services.js?v=' + tarteaucitron.version,
             linkElement = document.createElement('link'),
             defaults = {
                 "adblocker": false,
@@ -221,6 +222,7 @@ var tarteaucitron = {
                 "useExternalCss": false
             },
             params = tarteaucitron.parameters;
+
         // Step 0: get params
         if (params !== undefined) {
 
