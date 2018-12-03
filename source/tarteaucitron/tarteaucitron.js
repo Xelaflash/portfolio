@@ -1225,7 +1225,7 @@ var tarteaucitron = {
         "use strict";
         if (!navigator) { return 'en'; }
 
-        var availableLanguages = 'cs,en,fr,es,it,de,nl,pt,pl,ru,el',
+        var availableLanguages = 'en,fr,es',
             defaultLanguage = 'en',
             lang = navigator.language || navigator.browserLanguage ||
                 navigator.systemLanguage || navigator.userLang || null,
@@ -1254,18 +1254,8 @@ var tarteaucitron = {
             return 'fr_FR';
         } else if (userLanguage === 'en') {
             return 'en_US';
-        } else if (userLanguage === 'de') {
-            return 'de_DE';
         } else if (userLanguage === 'es') {
             return 'es_ES';
-        } else if (userLanguage === 'it') {
-            return 'it_IT';
-        } else if (userLanguage === 'pt') {
-            return 'pt_PT';
-        } else if (userLanguage === 'nl') {
-            return 'nl_NL';
-        } else if (userLanguage === 'el') {
-            return 'el_EL';
         } else {
             return 'en_US';
         }

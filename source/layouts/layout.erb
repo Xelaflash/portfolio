@@ -49,9 +49,11 @@
     <%= auto_javascript_include_tag %>
     <script type="text/javascript">
       tarteaucitron.user.gtagUa = 'UA-130123645-1';
-      tarteaucitron.user.analyticsAnonymizeIp = true;
-      tarteaucitron.user.gtagMore = function () { };
-      (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+      tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
+        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+      // tarteaucitron.user.analyticsAnonymizeIp = true;
+      // tarteaucitron.user.gtagMore = function () { };
+      // (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
     </script>
   </body>
 </html>
