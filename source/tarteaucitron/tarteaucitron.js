@@ -203,7 +203,7 @@ var tarteaucitron = {
         "use strict";
         var cdn = tarteaucitron.cdn,
             language = tarteaucitron.getLanguage(),
-            pathToLang = cdn + 'lang/tarteaucitron.' + language + '.js?v=' + tarteaucitron.version,
+            pathToLang = cdn + 'lang/tarteaucitron.en.js?v=' + tarteaucitron.version,
             pathToServices = cdn + 'tarteaucitron.services.js?v=' + tarteaucitron.version,
             linkElement = document.createElement('link'),
             defaults = {
@@ -223,7 +223,6 @@ var tarteaucitron = {
             },
             params = tarteaucitron.parameters;
 
-            console.log(cdn);
             console.log(pathToLang);
             console.log(pathToServices);
 
@@ -251,8 +250,6 @@ var tarteaucitron = {
             linkElement.href = cdn + 'css/tarteaucitron.css?v=' + tarteaucitron.version;
             document.getElementsByTagName('head')[0].appendChild(linkElement);
         }
-
-        console.log(linkElement);
         // Step 2: load language and services
         tarteaucitron.addScript(pathToLang, '', function () {
 
