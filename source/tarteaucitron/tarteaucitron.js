@@ -203,7 +203,7 @@ var tarteaucitron = {
         "use strict";
         var cdn = tarteaucitron.cdn,
             language = tarteaucitron.getLanguage(),
-            pathToLang = cdn + 'lang/tarteaucitron.en.js?v=' + tarteaucitron.version,
+            pathToLang = cdn + 'lang/tarteaucitron.' + language + '.js?v=' + tarteaucitron.version,
             pathToServices = cdn + 'tarteaucitron.services.js?v=' + tarteaucitron.version,
             linkElement = document.createElement('link'),
             defaults = {
@@ -222,10 +222,6 @@ var tarteaucitron = {
                 "useExternalCss": false
             },
             params = tarteaucitron.parameters;
-
-            console.log(pathToLang);
-            console.log(pathToServices);
-
         // Step 0: get params
         if (params !== undefined) {
 
