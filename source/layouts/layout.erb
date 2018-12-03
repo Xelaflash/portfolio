@@ -22,9 +22,8 @@
     <meta name="twitter:description" content="<%= data.site.meta_description %>">
     <meta name="twitter:creator" content="<%= data.site.twitter_account %>">
     <meta name="twitter:image:src" content="https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_auto/v1543600470/meta2.png">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/AmauriC/tarteaucitron.js@V1.2/tarteaucitron.min.js"></script>
     <%= stylesheet_link_tag "application" %>
-<!--     <script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script> -->
+    <script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script>
 
     <script type="text/javascript">
       tarteaucitron.init({
@@ -51,11 +50,9 @@
     <%= auto_javascript_include_tag %>
     <script type="text/javascript">
       tarteaucitron.user.gtagUa = 'UA-130123645-1';
-      tarteaucitron.user.gtagMore = function () { /* add here your optionnal gtag() */ };
-        (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
-      // tarteaucitron.user.analyticsAnonymizeIp = true;
-      // tarteaucitron.user.gtagMore = function () { };
-      // (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
+      tarteaucitron.user.analyticsAnonymizeIp = true;
+      tarteaucitron.user.gtagMore = function () { };
+      (tarteaucitron.job = tarteaucitron.job || []).push('gtag');
     </script>
   </body>
 </html>
