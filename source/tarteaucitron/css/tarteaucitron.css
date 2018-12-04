@@ -508,12 +508,8 @@ div#tarteaucitronServices {
     opacity: 1;
 }
 
-#gajsDenied {
+#analyticsDenied {
   background: #fa0000 !important;
-}
-
-#gtajsAllowed {
-  background: #00CC33 !important;
 }
 
 
