@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow:
+Disallow: /easter-star.html
+Disallow: /easter-matrix.html
