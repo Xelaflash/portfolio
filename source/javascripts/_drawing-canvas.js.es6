@@ -15,8 +15,6 @@ let lastY = 0;
 let hue = 0;
 let direction = true;
 
-const clearButton = document.querySelector('#parallax');
-
 function draw(e) {
   if (!isDrawing) return; // stop the fn from running when they are not moused down
   ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
@@ -55,7 +53,8 @@ canvas.addEventListener('mouseout', () => isDrawing = false);
 canvas.addEventListener('touchstart', () => isDrawing = true, {passive: true});
 canvas.addEventListener('touchmove', draw, {passive: true});
 
+const clearButton = document.querySelector('#parallax');
 function clear() {
   ctx.clearRect(0, 0, canvas.width, canvas.height)
-}
+};
 clearButton.addEventListener('click', clear);
