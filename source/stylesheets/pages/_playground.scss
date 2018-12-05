@@ -58,7 +58,8 @@
 }
 
 .parallax-button {
-  margin: -90px 0 20px 0;
+  margin: -82px 0 20px 0;
+  height: 200px;
   transform-style: preserve-3d;
   transform: perspective(800px);
 }
@@ -68,7 +69,7 @@
   flex-grow: 1;
   position:relative;
   border: 1px solid $red;
-  margin-bottom:5px;
+  margin: -130px 0 5px 0;
 }
 
 #draw {
