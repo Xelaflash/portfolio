@@ -21,7 +21,7 @@ function scrlResize(){
   const playground = $('#playground').offset().top;
   const scrollPos = $(document).scrollTop() + 70;
   if (scrollPos >= home && scrollPos < about) {
-    $('#navbar').css('background-color', '#2E416A');
+    $('#navbar').css('background-color', '#050F36');
   } else if (scrollPos >= about && scrollPos < projects) {
     $('#navbar').css('background-color', '#5775b6');}
     else if (scrollPos >= projects && scrollPos < contact) {
