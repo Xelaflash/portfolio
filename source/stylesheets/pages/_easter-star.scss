@@ -1,4 +1,5 @@
 #easter-1 {
+  position: relative;
   margin: 0;
   padding:0;
   background: black !important;
@@ -22,14 +23,17 @@
 /* Set the animation, color, size and hide the text */
 .intro {
   position: absolute;
-  top: 30%;
-  left: 29%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
   z-index: 1;
   animation: intro 6s ease-out 1s;
-  font-weight: 400;
-  font-size: 300%;
   opacity: 0;
   h1 {
+    font-size:58px;
+    font-weight: 400;
     color: rgb(75, 213, 238);
   }
 }
@@ -52,9 +56,10 @@
 /* Set the animation & hide the logo */
 .logo-easter {
   position: absolute;
-  top: 20%;
   left: 40%;
-  z-index: 1;
+  top: 30%;
+  transform: translate(-40%, -30%);
+  z-index: 0;
   margin: auto;
   animation: logo-easter 9s ease-out 9s;
   opacity: 0;
@@ -133,15 +138,15 @@
 @media only screen
   and (min-width: 320px)
   and (max-width: 812px) {
-  .intro {
-    left: 12%;
-    top:30%;
+  .intro h1 {
+      font-size: 32px;
   }
   .logo-easter {
     width: 300px;
     height: 200px;
+    left: 15%;
     top: 35%;
-    left: 6%;
+    transform: translate(-15%, -30%);
   }
   #board {
     margin-left: -4em;
@@ -151,13 +156,41 @@
 }
 
 @media only screen
+and (min-device-width: 320px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+  .intro {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+  }
+  .logo-easter {
+    left: 8%;
+    top: 25%;
+    transform: translate(-8%, -25%);
+  }
+
+  #board {
+    margin-left: -6em;
+    width: 12em;
+  }
+}
+
+@media only screen
   and (min-device-width: 320px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+  .intro {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -30%);
+  }
   .logo-easter {
-    top: 25%;
-    left: 30%;
+    left: 25%;
+    top: 20%;
+    transform: translate(-25%, -20%);
   }
   #board {
     margin-left: -6em;
@@ -170,14 +203,11 @@
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 1)
   and (orientation: portrait) {
-  .intro {
-    top:39%;
-    left: 14%;
-  }
   .logo-easter {
     width: 500px;
-    top: 35%;
     left: 30%;
+    top: 35%;
+    transform: translate(-30%, -35%);
   }
   #board {
     margin-left: -6em;
@@ -191,13 +221,10 @@
   and (max-device-width: 1366px)
   and (-webkit-min-device-pixel-ratio: 1)
   and (orientation: landscape) {
-  .intro {
-    top:37%;
-    left: 22%;
-  }
   .logo-easter {
-    top: 40%;
     left: 35%;
+    top: 40%;
+    transform: translate(-35%, -40%);
   }
   #board {
     margin-left: -7.5em;
