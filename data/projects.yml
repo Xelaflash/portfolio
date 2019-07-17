@@ -1,16 +1,9 @@
 Cabane:
   name: "La cabane de Maï"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543603310/cabanemaii.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1563367983/cabane-home.png"
   description: "E-commerce website for an organic beauty shop. <br> Developed with Devise, Stripe and Active Admin."
   stack: "Rails | Javascript | Heroku | Stripe"
   url: "https://lacabanedemaii.herokuapp.com/"
-HappySeat:
-  name: "Happy Seat"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543603694/happyseat.png"
-  description: "Wedding seating plan generator. <br>Final bootcamp project coded with 3 teammates (not maintained)"
-  date: 2018
-  stack: "Rails | Javascript | Heroku"
-  url: "http://www.happyseat.fr/"
 PYM:
   name: "Pierre-Yves Mori - TCC"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543603853/pymtcc.png"
