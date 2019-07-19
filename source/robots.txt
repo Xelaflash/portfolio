@@ -1,2 +1,5 @@
 User-Agent: *
-Disallow:
+Disallow: /easter-star.html
+Noindex: /easter-star.html
+Disallow: /easter-matrix.html
+Noindex: /easter-matrix.html

@@ -2,6 +2,7 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :directory_indexes
 
 require 'sprockets/es6'
 activate :sprockets do |s|
