@@ -1,5 +1,0 @@
-User-Agent: *
-Disallow: /easter-star.html
-Disallow: /easter-matrix.html
-
-Sitemap: https://www.alexgwebdev.com/sitemap
