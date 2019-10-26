@@ -1,3 +1,9 @@
+TridentFreedivers:
+  name: "Trident Freedivers"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1572100259/trident_freedivers.png"
+  description: "Static website for Trident Freedivers."
+  stack: "Middleman | Webpack | Netlify"
+  url: "https://www.tridentfreedivers.com"
 Cabane:
   name: "La cabane de Maï"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1563367983/cabane-home.png"
