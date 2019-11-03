@@ -39,10 +39,12 @@
 }
 
 .item {
-  width:65%;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width:65%;
   margin: 40px 30px 20px 0;
 }
 
