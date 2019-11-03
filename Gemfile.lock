@@ -242,6 +242,3 @@ DEPENDENCIES
   pry-byebug
   sass (~> 3.7, >= 3.7.3)
   sprockets-es6
-
-BUNDLED WITH
-   2.0.2
