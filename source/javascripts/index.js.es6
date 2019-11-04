@@ -41,5 +41,5 @@ function GetIEVersion() {
 }
 
 if (GetIEVersion() > 0) {
-  alert("You are using " + GetIEVersion() + "\nThis website probably won’t work great in Internet Explorer.\n We generally only support recent versions of major browser like, Chrome, Firefox, Safari and Edge.\nFor a better browsing experience we recommend updating your browser.");
+  alert("You are using Internet Explorer" + GetIEVersion() + ".\nThis website probably won’t work great in Internet Explorer.\n We generally only support recent versions of major browser like, Chrome, Firefox, Safari and Edge.\nFor a better browsing experience we recommend updating your browser.");
 }
