@@ -6,6 +6,7 @@ end
 
 require 'sprockets/es6'
 activate :sprockets do |s|
+  s.expose_middleman_helpers = true
   s.supported_output_extensions << '.es6'
 end
 activate :livereload
