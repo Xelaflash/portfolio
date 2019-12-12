@@ -1,32 +1,38 @@
+E.Ogier - Sohrologie:
+  name: "E.Ogier - Sohrologie"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162792/mockup_sophro.png"
+  description: "Static website for a sophrologist."
+  stack: "Middleman | Webpack | Netlify"
+  url: "https://www.emilieogier-sophrologie.fr/"
 TridentFreedivers:
   name: "Trident Freedivers"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1572100259/trident_freedivers.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162791/mockup_trident.png"
   description: "Static website for Trident Freedivers."
   stack: "Middleman | Webpack | Netlify"
   url: "https://www.tridentfreedivers.com"
 Cabane:
   name: "La cabane de Maï"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1563367983/cabane-home.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162792/mockup_cabane.png"
   description: "E-commerce website for an organic beauty shop. <br> Developed with Devise, Stripe and Active Admin."
   stack: "Rails | Javascript | Heroku | Stripe"
   url: "https://lacabanedemaii.herokuapp.com/"
 PYM:
   name: "Pierre-Yves Mori - TCC"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543603853/pymtcc.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162792/mockup_pym.png"
   description: "Static Website for a French therapist."
   date: 2018
   stack: "Rails | Heroku"
   url: "https://www.pym-therapeute-tcc.fr"
 FancyCocktail:
   name: "Fancy Cocktail"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543604262/fancycocktail.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162791/mockup_mister_cocktail.png"
   description: "Cocktail Manager that stores cocktails and recipes <br> (coded during Le wagon Bootcamp)."
   date: 2018
   stack: "Rails | Heroku"
   url: "https://fancy-cocktail.herokuapp.com/"
 Goosebumps:
   name: "Goosebumps"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543604262/goosebumps.png"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162790/mockup_goosebumps.png"
   description: "Middleman static website for a DJ crew."
   stack: "Middleman | GitHub pages"
   url: "https://xelaflash.github.io/goosebumps/"
