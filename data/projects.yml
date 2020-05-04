@@ -25,8 +25,8 @@ PYM:
   url: "https://www.pym-therapeute-tcc.fr"
 FancyCocktail:
   name: "Fancy Cocktail"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162791/mockup_mister_cocktail.png"
-  description: "Cocktail Manager that stores cocktails and recipes <br> (coded during Le wagon Bootcamp)."
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1588609172/mockup_cocktails.png"
+  description: "Cocktail Manager that stores cocktails and recipes <br> (coded during Le wagon Bootcamp && updated as an API)."
   date: 2018
   stack: "Rails | Heroku"
   url: "https://fancy-cocktail.herokuapp.com/"
