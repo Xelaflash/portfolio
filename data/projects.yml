@@ -29,7 +29,7 @@ FancyCocktail:
   description: "Cocktail Manager that stores cocktails and recipes <br> (coded during Le wagon Bootcamp && updated as an API)."
   date: 2018
   stack: "Rails | Heroku"
-  url: "https://fancy-cocktail.herokuapp.com/"
+  url: "https://fancy-cocktails2.herokuapp.com/"
 Goosebumps:
   name: "Goosebumps"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162790/mockup_goosebumps.png"
