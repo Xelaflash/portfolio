@@ -1,3 +1,21 @@
+ClasseConseil:
+  name: "C.L.A.S.S.E. CONSEIL"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1600696400/mockup_classe-conseil.png"
+  description: "Website for psychologist & business trainer"
+  stack: "Middleman | Webpack | Netlify"
+  url: "https://www.classeconseil.fr/"
+CocktailAddon:
+  name: "Fancy Cocktail Chrome Addon"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1600696492/cocktail_addon.gif"
+  description: "Chrome Addon to display a cocktail recipe on new tab"
+  stack: "Javascript | API"
+  url: "N/A"
+CatchOfTheDay:
+  name: "Catch of the Day"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1600696400/mock_up-cotd.png"
+  description: "Training project in React"
+  stack: "React | Firebase | Netlify"
+  url: "https://elegant-kare-732405.netlify.app/"
 E.Ogier - Sohrologie:
   name: "E.Ogier - Sohrologie"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162792/mockup_sophro.png"
