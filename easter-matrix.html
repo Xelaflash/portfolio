@@ -1,0 +1,114 @@
+<!doctype html> <html lang=en> <head> <meta charset=utf-8> <meta http-equiv=x-ua-compatible content="ie=edge"> <meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit=no"> <title>Easter Egg - Matrix</title> <link rel=canonical href="https://www.alexgwebdev.com"> <meta name=description content="Freelance Full-Stack Web Developer, I can help you craft an elegant, fast, intuitive and responsive website (from back-end to front-end) adapted to your project needs and budget."> <meta name=theme-color content="#2E416A"/> <meta property="og:title" content="Alex G | Full-Stack Web Developer"/> <meta property="og:type" content=website /> <meta property="og:url" content="https://www.alexgwebdev.com"/> <meta property="og:image" content="https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_auto/v1543600470/meta2.png"/> <meta property="og:description" content="Freelance Full-Stack Web Developer, I can help you craft an elegant, fast, intuitive and responsive website (from back-end to front-end) adapted to your project needs and budget."/> <meta property="og:site_name" content="Alex G | Full-Stack Web Developer"/> <meta name="twitter:card" content=summary_large_image> <meta name="twitter:site" content="@GhostXela"> <meta name="twitter:title" content="Alex G | Full-Stack Web Developer"> <meta name="twitter:description" content="Freelance Full-Stack Web Developer, I can help you craft an elegant, fast, intuitive and responsive website (from back-end to front-end) adapted to your project needs and budget."> <meta name="twitter:creator" content="@GhostXela"> <meta name="twitter:image:src" content="https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_auto/v1543600470/meta2.png"> <link href="stylesheets/application-c668a657.css" rel=stylesheet /> <script src="tarteaucitron/tarteaucitron-ade0dd93.js"></script> <script>
+      tarteaucitron.init({
+        "privacyUrl": "/privacy.html",
+        "hashtag": "#tarteaucitron",
+        "cookieName": "tartaucitron",
+        "orientation": "bottom",
+        "showAlertSmall": false,
+        "cookieslist": true,
+        "adblocker": false,
+        "AcceptAllCta" : true,
+        "highPrivacy": false,
+        "handleBrowserDNTRequest": false,
+        "removeCredit": true,
+        "moreInfoLink": true
+      });
+    </script> </head> <body data-spy=scroll data-target="#navbar" data-offset=70 class=preload> <nav class=navbar-fixed-top id=navbar> <div class=navbar-top> <div class=logo> <a href="#home"> <img src="https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_auto/v1543599526/white_letters_no_back.png" alt="Alex G - Full-Stack Web Developer" class="logo-pic img-responsive"/> </a> </div> <div class="navbar-right hidden-xs hidden-sm"> <ul class="nav navbar-nav"> <li><a href="#about" class="navbar-item navbar-link">About</a></li> <li><a href="#projects" class="navbar-item navbar-link">Projects</a></li> <li><a href="#contact" class="navbar-item navbar-link">Contact</a></li> <li><a href="#playground" class="navbar-item navbar-link">Playground</a></li> </ul> </div> <div class="navbar-item-xs hidden-md hidden-lg"> <div class=dropdown> <i class="fas fa-bars dropdown-toggle" data-toggle=dropdown aria-haspopup=true aria-expanded=false role=navigation></i> <ul class="dropdown-menu nav navbar-nav dropdown-menu-right navbar-dropdown-menu"> <li><a href="#about" class="navbar-item navbar-link">About</a></li> <li><a href="#projects" class="navbar-item navbar-link">Projects</a></li> <li><a href="#contact" class="navbar-item navbar-link">Contact</a></li> <li><a href="#playground" class="navbar-item navbar-link">Playground</a></li> </ul> </div> </div> </div> </nav> <div class=container-fluid id=easter-2> <canvas id=code-rain></canvas> <a href="index.html" class=back-reality>Back_to your Virtual_Reality</a> </div> <script>
+
+  const matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%¥µ§ØΩφΣπ     $Üñþ√ϖϑβξ¶Æ日_-|ｦｲｸｺｿﾁﾄﾉﾌﾔﾖﾙﾚﾛﾝﾊﾐﾋｰｳｼﾅﾓﾆｻﾜﾂｵﾘｱﾎﾃﾏｹﾒｴｶｷﾑﾕﾗｾﾈｽﾀﾇﾍ";
+
+  const canvasMatrix = document.getElementById("code-rain");
+  const ctxMatrix = canvasMatrix.getContext("2d");
+  canvasMatrix.height = window.innerHeight;
+  canvasMatrix.width = window.innerWidth;
+  matrix.split("");
+
+  const font_size = 11;
+  const columns = canvasMatrix.width / font_size;
+  const drops = [];
+  for(let x = 0; x < columns; x++)
+  drops[x] = 1;
+
+  function draw() {
+    ctxMatrix.fillStyle = "rgba(0, 0, 0, 0.04)";
+    ctxMatrix.fillRect(0, 0, canvasMatrix.width, canvasMatrix.height);
+
+    ctxMatrix.fillStyle = "#0F0"; //green text
+    ctxMatrix.font = font_size + "px arial";
+
+    for( let i = 0; i < drops.length; i++ ) {
+      let text = matrix[ Math.floor( Math.random() * matrix.length ) ];
+      ctxMatrix.fillText(text, i * font_size, drops[i] * font_size);
+      if( drops[i] * font_size > canvasMatrix.height && Math.random() > 0.975 )
+      drops[i] = 0;
+      drops[i]++;
+    }
+  };
+  setInterval( draw, 100 );
+
+  function Randomiser(el, count, delay) {
+    this.element = el;
+    this.originalText = el.textContent || el.innerText || '';
+    this.places = [];
+    this.currentText = [];
+    this.count = count || 2;   // iterations before fixing a character
+    this.delay = delay || 100; // milliseconds between updates
+    this.iteration = 0;
+    this.startTime = new Date();
+    var i = this.originalText.length;
+    while (i--) {
+      this.places[i] = [i];
+    }
+  }
+
+// text randomiser
+  Randomiser.prototype.randomise = function() {
+    var i = this.places.length;
+    while (i--) {
+      this.currentText[this.places[i]] = matrix.charAt((Math.random() * matrix.length) | 0);
+    }
+    this.iteration += 1;
+  }
+
+  Randomiser.prototype.setContent = function() {
+    var t = this.currentText.join('');
+    if (typeof this.element.textContent == 'string') {
+      this.element.textContent = t;
+    } else {
+      this.element.innerText = t;
+    }
+  }
+
+  Randomiser.prototype.run = function() {
+    var n;
+    var temp = [];
+    // If first run, randomise to initiate
+    if (!this.iteration) {
+      this.randomise();
+    }
+    // If there are places left
+    if (this.places.length) {
+      // If reached count, randomly remove one place and set its character
+      // to the original value
+      if (!(this.iteration % this.count)) {
+        n = this.places.splice((Math.random() * this.places.length|0), 1)[0];
+        this.currentText[n] = this.originalText.charAt(n);
+      }
+      // Randomise the string and call itself
+      this.randomise();
+      this.setContent();
+      var randomiser = this;
+      setTimeout(function(){randomiser.run();}, this.delay);
+    }
+    // If no places left, end
+  }
+  // Kick it off
+  var r = new Randomiser(document.querySelector('.back-reality'), 5, 100);
+  r.run();
+
+</script> <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <script>
+      tarteaucitron.user.analyticsUa = 'UA-130123645-1';
+      tarteaucitron.user.analyticsAnonymizeIp = true;
+      tarteaucitron.user.analyticsMore = function () { };
+      (tarteaucitron.job = tarteaucitron.job || []).push('analytics');
+    </script> </body> </html>
