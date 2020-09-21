@@ -10,9 +10,10 @@ gem 'middleman-livereload'
 gem 'middleman-minify-html'
 gem 'middleman-sprockets'
 gem 'pry-byebug', require: true
-gem 'sass', '~> 3.7', '>= 3.7.3'
+gem 'sass'
 gem 'sassc'
 gem 'sprockets-es6'
+gem 'sprockets', '~> 3.7.2'
 
 # Assets
 gem 'bootstrap-sass'
