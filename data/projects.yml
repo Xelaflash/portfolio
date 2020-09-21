@@ -4,12 +4,6 @@ ClasseConseil:
   description: "Website for psychologist & business trainer"
   stack: "Middleman | Webpack | Netlify"
   url: "https://www.classeconseil.fr/"
-CatchOfTheDay:
-  name: "Catch of the Day"
-  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1600705802/mock_up-cotd_copy.png"
-  description: "Training project in React"
-  stack: "React | Firebase | Netlify"
-  url: "https://elegant-kare-732405.netlify.app/"
 E.Ogier - Sohrologie:
   name: "E.Ogier - Sohrologie"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162792/mockup_sophro.png"
@@ -48,6 +42,12 @@ Goosebumps:
   description: "Middleman static website for a DJ crew."
   stack: "Middleman | GitHub pages"
   url: "https://xelaflash.github.io/goosebumps/"
+CatchOfTheDay:
+  name: "Catch of the Day"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1600705802/mock_up-cotd_copy.png"
+  description: "Training project in React"
+  stack: "React | Firebase | Netlify"
+  url: "https://elegant-kare-732405.netlify.app/"
 ReactChat:
   name: "Rails React chat"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/f_auto,q_100/v1543604262/railsreactchat.png"
