@@ -3,7 +3,7 @@ N21:
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1612528850/mockupn21.png"
   description: "Website made for N21 restaurant in Ho Chi Minh City Vietnam"
   stack: "Middleman | Webpack | Netlify"
-  url: ""
+  url: "https://www.n21saigon.com/"
 TCCCoteBasque:
   name: "TCC Côte Basque"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1612528849/mockup_tcc_cotebasque.png"
