@@ -1,3 +1,15 @@
+N21:
+  name: "N21 restaurant"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1612528850/mockupn21.png"
+  description: "Website made for N21 restaurant in Ho Chi Minh City Vietnam"
+  stack: "Middleman | Webpack | Netlify"
+  url: ""
+TCCCoteBasque:
+  name: "TCC Côte Basque"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1612528849/mockup_tcc_cotebasque.png"
+  description: "Landing page for a psychiatric clinic"
+  stack: "Middleman | Webpack | Netlify"
+  url: "https://www.tcc-cotebasque.fr/"
 ClasseConseil:
   name: "C.L.A.S.S.E. CONSEIL"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1600696400/mockup_classe-conseil.png"
@@ -16,6 +28,12 @@ TridentFreedivers:
   description: "Static website for Trident Freedivers."
   stack: "Middleman | Webpack | Netlify"
   url: "https://www.tridentfreedivers.com"
+SlickSlices:
+  name: "Slick's Slices"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1612528849/mockup_slickslice.png"
+  description: "Gatsby website made for learning purpose"
+  stack: "Gatsby | React | Netlify | Sanity CMS | API"
+  url: "https://thirsty-mcclintock-8946d4.netlify.app/"
 Cabane:
   name: "La cabane de Maï"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162792/mockup_cabane.png"
