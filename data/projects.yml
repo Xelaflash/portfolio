@@ -28,6 +28,13 @@ TridentFreedivers:
   description: "Static website for Trident Freedivers."
   stack: "Middleman | Webpack | Netlify"
   url: "https://www.tridentfreedivers.com"
+PassionDoner:
+  name: "Passion Döner"
+  picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1614694477/passion-doner.png"
+  description: "Covid lockdown side project to refresh my Rails 6 skills.
+CRUD app to register (if administrator), find and rate the döner by categories."
+  stack: "Rails | Heroku"
+  url: "https://passion-doner.herokuapp.com/"
 SlickSlices:
   name: "Slick's Slices"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1612528849/mockup_slickslice.png"
