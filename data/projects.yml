@@ -1,9 +1,9 @@
 N21:
   name: "N21 restaurant"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1612528850/mockupn21.png"
-  description: "Website made for N21 restaurant in Ho Chi Minh City Vietnam"
+  description: "Website inactive, restaurant is close i keep it for display purpose"
   stack: "Middleman | Webpack | Netlify"
-  url: "https://www.n21saigon.com/"
+  url: "https://festive-meitner-7c1016.netlify.app/"
 TCCCoteBasque:
   name: "TCC Côte Basque"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1612528849/mockup_tcc_cotebasque.png"
@@ -44,7 +44,7 @@ SlickSlices:
 Cabane:
   name: "La cabane de Maï"
   picture: "https://res.cloudinary.com/dcf4y5ngp/image/upload/v1576162792/mockup_cabane.png"
-  description: "E-commerce website for an organic beauty shop. <br> Developed with Devise, Stripe and Active Admin."
+  description: "E-commerce website (inactive shop is now closed). <br> Developed with Devise, Stripe and Active Admin."
   stack: "Rails | Javascript | Heroku | Stripe"
   url: "https://lacabanedemaii.herokuapp.com/"
 PYM:
