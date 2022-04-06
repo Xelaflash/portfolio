@@ -2,4 +2,6 @@
 
 Static portofolio website coded with middleman (October 2018).
 
-[https://www.alexgwebdev.com/](https://www.alexgwebdev.com/)
+Now (April 2022) but still consultable:
+
+https://xelaflash.github.io/portfolio/](https://xelaflash.github.io/portfolio//)
